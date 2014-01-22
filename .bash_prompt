@@ -1,0 +1,37 @@
+# Base styles and color palette
+# Solarized colors
+# https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized
+BOLD=$(tput bold)
+RESET=$(tput sgr0)
+SOLAR_YELLOW=$(tput setaf 136)
+SOLAR_ORANGE=$(tput setaf 166)
+SOLAR_RED=$(tput setaf 124)
+SOLAR_MAGENTA=$(tput setaf 125)
+SOLAR_VIOLET=$(tput setaf 61)
+SOLAR_BLUE=$(tput setaf 33)
+SOLAR_CYAN=$(tput setaf 37)
+SOLAR_GREEN=$(tput setaf 64)
+SOLAR_WHITE=$(tput setaf 254)
+
+style_user="\[${RESET}${SOLAR_ORANGE}\]"
+style_host="\[${RESET}${SOLAR_YELLOW}\]"
+style_path="\[${RESET}${SOLAR_GREEN}\]"
+style_chars="\[${RESET}${SOLAR_WHITE}\]"
+style_branch="${SOLAR_CYAN}"
+
+
+#prompt git
+export GIT_PS1_SHOWDIRTYSTATE=1 GIT_PS1_SHOWSTASHSTATE=1 GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWUPSTREAM=verbose GIT_PS1_DESCRIBE_STYLE=branch GIT_PS1_SHOWCOLORHINTS=1
+# Set the terminal title to the current working directory
+PS1="\[\033]0;\w\007\]"
+# Build the prompt
+PS1+="\n" # Newline
+PS1+="${style_user}\u" # Username
+PS1+="${style_chars}@" # @
+PS1+="${style_host}\h" # Host
+PS1+="${style_chars}: " # :
+PS1+="${style_path}\w" # Working directory
+PS1+="\[${RESET}\]"
+PS1+='$(__git_ps1 " (%s)")'
+PS1+="\n" # Newline
