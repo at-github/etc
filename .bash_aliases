@@ -1,7 +1,8 @@
 export TERM="screen-256color"
 eval "`dircolors -b ~/.dircolors`"
 alias ls='ls --color=auto'
-alias ll='ls -ltr'
+alias ll='ls -ltFh --group-directories-first'
+alias l='ll'
 alias lla='ll -a'
 
 alias grep='grep --color=auto'
