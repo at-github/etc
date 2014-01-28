@@ -20,3 +20,11 @@ fi
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
+
+if [ -f ~/.bash_mancolor ]; then
+    . ~/.bash_mancolor
+fi
+
+if [ -d ~/.local/bin ]; then
+    PATH=$PATH:~/.local/bin
+fi

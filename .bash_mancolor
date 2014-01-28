@@ -1,0 +1,12 @@
+# Pages man en couleur.
+
+export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
+export LESS_TERMCAP_md=$'\E[01;38;5;74m'  # begin bold
+export LESS_TERMCAP_so=$'\E[38;5;74;7m'   # begin standout-mode - info box
+export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
+
+export LESS_TERMCAP_ue=$'\E[m'           # end underline
+export LESS_TERMCAP_me=$'\E[m'           # end mode
+export LESS_TERMCAP_se=$'\E[m'           # end standout-mode
+
+# vim:set filetype=sh :
