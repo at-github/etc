@@ -11,6 +11,9 @@ done
 printf "\n_| Source .bashrc |_\n\n"
 source $HOME/.bashrc
 
+printf "\n_| Source .tmux.conf |_\n\n"
+source $HOME/.tmux.conf
+
 echo "_| Would you like to delete some backupped files in your home ? |_"
 echo "_| (This script make some backupped files if it find file already exist) |_"
 read -p "_| Yes or No (y|n) |_ ??? : " answer
