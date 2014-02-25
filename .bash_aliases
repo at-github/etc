@@ -4,7 +4,7 @@ alias ls='ls --color=auto'
 alias ll='ls -ltFh --group-directories-first'
 alias l='ll'
 alias lla='ll -a'
-alias la='lla'
+alias la='ls -a'
 
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
