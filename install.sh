@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 platform=$(uname);
-declare -a files=('.bash_aliases' '.bash_mancolor' '.bash_profile' '.bash_prompt' '.bashrc' '.dircolors' '.gitconfig' '.gitignore' '.tmux.conf');
+declare -a files=('.bash_aliases' '.bash_mancolor' '.bash_profile' '.bash_prompt' '.bashrc' '.dircolors' '.gitconfig' '.gitignore' '.tmux.conf', '.i3', '.i3status.conf');
 
 echo "_| Start to install, make symbolic link config files |_"
 
