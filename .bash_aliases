@@ -1,5 +1,8 @@
 export TERM="screen-256color"
 eval "`dircolors -b ~/.dircolors`"
+
+alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
+
 alias ls='ls --color=auto'
 alias ll='ls -ltFh --group-directories-first'
 alias l='ll'
