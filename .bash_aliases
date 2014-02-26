@@ -23,7 +23,7 @@ alias du='du -ch'
 
 alias temp='sudo /opt/vc/bin/vcgencmd measure_temp'
 
-alias vi="vi -p"
+alias vi="vim -p"
 alias vie="vi +:Explore"
 alias vin="vi +:NERDTreeToggle"
 
