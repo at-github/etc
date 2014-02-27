@@ -6,11 +6,12 @@
     ui = auto
 
 [alias]
-    st = status
-    br = branch
-    ci = commit
-    co = checkout
-    lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %ar)%Creset'
+    st   = status
+    str  = status -sb
+    br   = branch
+    ci   = commit
+    co   = checkout
+    lg   = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %ar)%Creset'
     last = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %ar)%Creset' -n 1
 
 [core]
