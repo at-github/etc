@@ -27,11 +27,15 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM=verbose
 export GIT_PS1_DESCRIBE_STYLE=branch
 export GIT_PS1_SHOWCOLORHINTS=1
-# Set the terminal title to the current working directory
+
 PS1="\[\033]0;\w\007\]"
 # Build the prompt
 PS1+="\n" # Newline
-PS1+="${style_user}\u" # Username
+if [ $(id -u) -eq 0 ]; then
+    PS1+="\e[1;30m\e[41m\e[1;37m\u" # Username
+else
+    PS1+="${style_user}\u" # Username
+fi
 PS1+="${style_chars}@" # @
 PS1+="${style_host}\h" # Host
 PS1+="${style_chars}: " # :
