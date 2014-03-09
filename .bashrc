@@ -4,15 +4,6 @@ if [ -f ~/.bash_prompt ]; then
     . ~/.bash_prompt
 fi
 
-#TODO Remove below, because color works only in .bash_aliases
-if [ -f "/etc/dircolors" ] ; then
-        eval $(dircolors -b /etc/dircolors)
-
-        if [ -f "$HOME/.dircolors" ] ; then
-                eval $(dircolors -b $HOME/.dircolors)
-        fi
-fi
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
