@@ -1,4 +1,5 @@
 export TERM="screen-256color"
+#TODO find solution on mac os
 eval "`dircolors -b ~/.dircolors`"
 
 # Update configurations, basically move to the rights folders and make git pull.
@@ -11,6 +12,7 @@ alias ub='pathOrigin=${PWD};
 
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
 
+#TODO find solution on mac os
 alias ls='ls --color=auto'
 alias ll='ls -ltFh --group-directories-first'
 alias l='ll'
