@@ -21,6 +21,19 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+#for mac os
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+    . /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+
+if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+    . /usr/local/etc/bash_completion.d/git-prompt.sh
+fi
+
+if [ -f /usr/local/etc/bash_completion.d/tmux ]; then
+    . /usr/local/etc/bash_completion.d/tmux
+fi
+
 if [ -f ~/.bash_mancolor ]; then
     . ~/.bash_mancolor
 fi
