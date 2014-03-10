@@ -30,5 +30,6 @@ alias vi="vim -p"
 alias vie="vi +:Explore"
 alias vin="vi +:NERDTreeToggle"
 
-#WIP
+#TODO alias updating bashAndTmux folder and vim config
+#TODO WIP
 #alias grepVim='vi -p ̀ grep -l "$@" *`'
