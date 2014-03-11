@@ -1,6 +1,14 @@
 export TERM="screen-256color"
 eval "`dircolors -b ~/.dircolors`"
 
+# Update configurations, basically move to the rights folders and make git pull.
+alias ub='pathOrigin=${PWD};
+          cd ~/.local/var/bashAndTmux/;
+          printf ">>> update bash, tmux and git config\n";
+          git pull; cd ~/.vim;
+          printf ">>> update vim\n";
+          git pull; cd ${pathOrigin};'
+
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
 
 alias ls='ls --color=auto'
@@ -29,7 +37,3 @@ alias temp='sudo /opt/vc/bin/vcgencmd measure_temp'
 alias vi="vim -p"
 alias vie="vi +:Explore"
 alias vin="vi +:NERDTreeToggle"
-
-#TODO alias updating bashAndTmux folder and vim config
-#TODO WIP
-#alias grepVim='vi -p ̀ grep -l "$@" *`'
