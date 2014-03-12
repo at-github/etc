@@ -3,7 +3,7 @@
     email = tarik.amar@gmail.com
 
 [color]
-    ui = auto
+    ui = true
 
 [alias]
     st   = status -sb
