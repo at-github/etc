@@ -40,3 +40,11 @@ alias temp='sudo /opt/vc/bin/vcgencmd measure_temp'
 alias vi="vim -p"
 alias vie="vi +:Explore"
 alias vin="vi +:NERDTreeToggle"
+
+alias gitdiff="watch --color -n 2 git diff --color=always"
+alias gd="gitdiff"
+alias tgd="tmux split-window -h; tmux send-keys gd ENTER"
+
+alias gitst="watch --color -n 2 git st"
+alias gt="gitst"
+alias tgitst="tmux split-window -h; tmux send-keys gitst ENTER"
