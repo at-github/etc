@@ -3,6 +3,7 @@ export TERM="screen-256color"
 eval "`dircolors -b ~/.dircolors`"
 
 # Update configurations, basically move to the rights folders and make git pull.
+# TODO find the right folder instead hard code path, following symlink
 alias ub='pathOrigin=${PWD};
           cd ~/.local/var/bashAndTmux/;
           printf ">>> update bash, tmux and git config\n";
