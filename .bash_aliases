@@ -20,7 +20,7 @@ alias l='ll'
 alias lla='ll -a'
 alias la='ls -a'
 
-alias grep='grep --color=auto'
+alias grep='grep -n --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
@@ -35,7 +35,7 @@ alias rm='rm -i'
 alias df='df -H'
 alias du='du -ch'
 
-alias temp='sudo /opt/vc/bin/vcgencmd measure_temp'
+alias todo='grep -is todo *'
 
 alias vi="vim -p"
 alias vie="vi +:Explore"
