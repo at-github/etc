@@ -5,12 +5,10 @@ if [ -f ~/.bash_prompt ]; then
 fi
 
 if [ `uname` == 'Darwin' ]; then
-    echo 'source .bash_aliases_mac'
     if [ -f ~/.bash_aliases_mac ]; then
         . ~/.bash_aliases_mac
     fi
 elif [ `uname` == 'Linux' ]; then
-    echo 'source .bash_aliases'
     if [ -f ~/.bash_aliases ]; then
         . ~/.bash_aliases
     fi
