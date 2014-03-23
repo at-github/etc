@@ -1,0 +1,45 @@
+export TERM="screen-256color"
+
+# Update configurations, basically move to the rights folders and make git pull.
+# TODO find the right folder instead hard code path, following symlink
+alias ub='pathOrigin=${PWD};
+          cd ~/.local/var/bashAndTmux/;
+          printf ">>> update bash, tmux and git config\n";
+          git pull; cd ~/.vim;
+          printf ">>> update vim\n";
+          git pull; cd ${pathOrigin};'
+
+alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
+
+alias ls='ls -G'
+alias ll='ls -ltFh'
+alias l='ll'
+alias lla='ll -a'
+alias la='ls -a'
+
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+alias dir='dir --color=auto'
+
+alias ps='ps aux'
+
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+alias df='df -H'
+alias du='du -ch'
+
+alias vi="vim -p"
+alias vie="vi +:Explore"
+alias vin="vi +:NERDTreeToggle"
+
+alias gitdiff="watch --color -n 2 git diff --color=always"
+alias gd="gitdiff"
+alias tgd="tmux split-window -h; tmux send-keys gd ENTER"
+
+alias gitst="watch --color -n 2 git st"
+alias gt="gitst"
+alias tgitst="tmux split-window -h; tmux send-keys gitst ENTER"
