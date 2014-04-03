@@ -6,7 +6,7 @@
     ui = true
 
 [alias]
-    st   = status -sb
+    st   = status -sbuno
     br   = branch
     ci   = commit
     co   = checkout
