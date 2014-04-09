@@ -1,4 +1,5 @@
 export TERM="screen-256color"
+eval "`dircolors -b ~/.dircolors`"
 
 # Update configurations, basically move to the rights folders and make git pull.
 # TODO find the right folder instead hard code path, following symlink
@@ -14,6 +15,9 @@ alias ub='pathOrigin=${PWD};
           cd ${pathOrigin};'
 
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
+
+#Move to the near root git folder
+alias cdg='cd $(git rev-parse --show-cdup)'
 
 alias ls='ls --color=auto'
 alias ll='ls -ltFh --group-directories-first'

@@ -15,6 +15,9 @@ alias ub='pathOrigin=${PWD};
 
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
 
+#Move to the near root git folder
+alias cdg='cd $(git rev-parse --show-cdup)'
+
 alias ls='ls -G'
 alias ll='ls -ltFh'
 alias l='ll'
