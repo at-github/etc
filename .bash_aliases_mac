@@ -1,9 +1,9 @@
 export TERM="screen-256color"
 
 # Update configurations, basically move to the rights folders and make git pull.
-# TODO find the right folder instead hard code path, following symlink
+repo=$(readlink ~/.bashrc | sed "s/.bashrc//")
 alias ub='pathOrigin=${PWD};
-          cd ~/.local/var/bashAndTmux/;
+          cd ${repo};
           printf ">>> update bash, tmux and git config\n";
           git pull;
           printf ">>> Reload conf\n";
