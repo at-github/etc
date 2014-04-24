@@ -27,6 +27,7 @@ if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
     . /usr/local/etc/bash_completion.d/git-prompt.sh
 fi
 
+#for mac os ?
 if [ -f /usr/local/etc/bash_completion.d/tmux ]; then
     . /usr/local/etc/bash_completion.d/tmux
 fi
@@ -37,6 +38,10 @@ fi
 
 if [ -d ~/.local/bin ]; then
     PATH=$PATH:~/.local/bin
+fi
+
+if [ -f ~/.bash_aliases_local ]; then
+    . ~/.bash_aliases_local
 fi
 
 umask 0002
