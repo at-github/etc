@@ -6,12 +6,12 @@ repo=$(readlink -f ~/.bashrc | sed "s/.bashrc//")
 alias ub='pathOrigin=${PWD};
           cd ${repo};
           printf ">>> update bash, tmux and git config\n";
-          git pull;
+          git pull --rebase;
           printf ">>> Reload conf\n";
           source ~/.bashrc;
           cd ~/.vim;
           printf ">>> update vim\n";
-          git pull;
+          git pull --rebase;
           cd ${pathOrigin};'
 
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
