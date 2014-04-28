@@ -27,9 +27,19 @@ if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
     . /usr/local/etc/bash_completion.d/git-prompt.sh
 fi
 
+#for vddev cent os
+if [ -f /etc/bash_completion.d/git ]; then
+    . /etc/bash_completion.d/git
+fi
+
 #for mac os ?
 if [ -f /usr/local/etc/bash_completion.d/tmux ]; then
     . /usr/local/etc/bash_completion.d/tmux
+fi
+
+#for vddev cent os
+if [ -f /etc/bash_completion.d/bash_completion_tmux.sh ]; then
+    . /etc/bash_completion.d/bash_completion_tmux.sh
 fi
 
 if [ -f ~/.bash_mancolor ]; then
