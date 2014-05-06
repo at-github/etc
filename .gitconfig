@@ -48,9 +48,12 @@
     default = upstream
 
 [rerere]
-    # If, like me, you like rerere, decomment these
+    # 'Reuse Recorded Resolution'
+
+    enabled = true
+
+    # add to index automatically
     # autoupdate = true
-    # enabled = true
 
 [status]
     submoduleSummary = true
