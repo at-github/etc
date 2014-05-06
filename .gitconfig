@@ -14,14 +14,8 @@
     last = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %ar)%Creset' -n 1
 
 [core]
-    pager = cat
-    #
-    # Out of luck: on Windows w/o msysGit? You may have Notepad++…
-    # editor = 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
-    #
-    # If you want to use Sublime Text 2's subl wrapper:
-    # editor = subl -w
-    #
+    pager = less
+    editor = vim
     whitespace = -trailing-space
 
 [diff]
