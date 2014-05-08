@@ -16,33 +16,40 @@
 [core]
     pager = less
     editor = vim
+    #Todo: to document
     whitespace = -trailing-space
 
 [diff]
+    #Todo: to document
     mnemonicPrefix = true
+    #Todo: to document, minimal regex for diff words ?
     wordRegex = .
 
 [fetch]
+    #Todo: to document
     recurseSubmodules = on-demand
 
 [grep]
+    #Todo: to document
     extendedRegexp = true
 
 [log]
+    #Todo: to document
     abbrevCommit = true
 
 [merge]
-    conflictStyle = diff3
+    # conflictStyle = diff3
 
 [mergetool]
+    #Todo: to document
     keepBackup = false
+    #Todo: to document
     keepTemporaries = false
+    #Todo: to document
     prompt = false
 
 [pull]
-    # This is GREAT… when you know what you're doing and are careful
-    # not to pull --no-rebase over a local line containing a true merge.
-    # rebase = true
+    rebase = true
 
 [push]
     default = upstream
