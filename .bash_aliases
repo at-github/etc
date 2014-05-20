@@ -16,35 +16,38 @@ alias ub='pathOrigin=${PWD};
 
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
 
+alias c='cd'
 #Move to the near root git folder
 alias cdg='cd $(git rev-parse --show-cdup)'
 
 alias ls='ls --color=auto'
-alias ll='ls -ltFh --group-directories-first'
+alias ll='ls -lFh --group-directories-first'
 alias l='ll'
 alias lla='ll -a'
 alias la='ls -a'
 
 alias grep='grep -n --color=auto'
+alias g='grep'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-
-alias dir='dir --color=auto'
 
 alias ps='ps aux'
 
 alias cp='cp -i'
 alias mv='mv -i'
+alias m='mv'
 alias rm='rm -i'
+alias r='rm'
 
 alias df='df -H'
 alias du='du -ch'
 
 alias todo='grep -is todo *'
 
-alias vi="vim -p"
-alias vie="vi +:Explore"
-alias vin="vi +:NERDTreeToggle"
+alias v='vim'
+alias vi="v -p"
+alias vie="v +:Explore"
+alias vin="v +:NERDTreeToggle"
 
 alias gitdiff="watch --color -n 2 git diff --color=always"
 alias gd="gitdiff"
