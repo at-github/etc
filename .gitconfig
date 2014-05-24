@@ -4,6 +4,7 @@
 
 [color]
     ui = true
+    status = always
 
 [alias]
     st   = status -sbuno
@@ -14,9 +15,8 @@
     last = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %ar)%Creset' -n 1
 
 [core]
-    pager = less
+    pager = cat
     editor = vim
-    #Todo: to document
     whitespace = -trailing-space
 
 [diff]
