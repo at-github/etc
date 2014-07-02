@@ -37,7 +37,12 @@ if [ -f /usr/local/etc/bash_completion.d/tmux ]; then
     . /usr/local/etc/bash_completion.d/tmux
 fi
 
-#for vddev cent os
+#for debian
+if [ -f /usr/share/doc/tmux/examples/bash_completion_tmux.sh ]; then
+    . /usr/share/doc/tmux/examples/bash_completion_tmux.sh
+fi
+
+#for cent os
 if [ -f /etc/bash_completion.d/bash_completion_tmux.sh ]; then
     . /etc/bash_completion.d/bash_completion_tmux.sh
 fi
