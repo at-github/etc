@@ -64,3 +64,5 @@
 
 [status]
     submoduleSummary = true
+[commit]
+    template = /home/tarik/.gitmessage.txt
