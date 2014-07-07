@@ -44,8 +44,8 @@ alias du='du -ch'
 
 alias todo='grep -is todo *'
 
-alias v='vim'
-alias vi="v -p"
+alias v='vim -p'
+alias vi="v"
 alias vie="v +:Explore"
 alias vin="v +:NERDTreeToggle"
 
