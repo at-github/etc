@@ -55,6 +55,11 @@ if [ -d ~/.local/bin ]; then
     PATH=$PATH:~/.local/bin
 fi
 
+#Note: for duplicate program concatenate the path at the end
+if [ -d ~/.local/vim ]; then
+    PATH=~/.local/vim/bin:$PATH
+fi
+
 if [ -f ~/.bash_aliases_local ]; then
     . ~/.bash_aliases_local
 fi
