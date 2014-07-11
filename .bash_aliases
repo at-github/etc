@@ -24,6 +24,7 @@ alias ub='pathOrigin=${PWD};
           cd ${pathOrigin};'
 
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
+alias eb='vim -p ~/.bashrc ~/.bash_aliases ~/.bash_prompt'
 
 alias c='cd'
 #Move to the near root git folder
