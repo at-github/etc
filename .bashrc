@@ -60,6 +60,10 @@ if [ -d ~/.local/vim ]; then
     PATH=~/.local/vim/bin:$PATH
 fi
 
+if [ -d ~/.local/git ]; then
+    PATH=~/.local/git/bin:$PATH
+fi
+
 if [ -f ~/.bash_aliases_local ]; then
     . ~/.bash_aliases_local
 fi
