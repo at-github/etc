@@ -1,16 +1,19 @@
 export TERM="screen-256color"
+if [ `uname` != 'Darwin' ]; then
+    eval "`dircolors -b ~/.dircolors`"
+fi
 
 if [ -f ~/.bash_prompt ]; then
     . ~/.bash_prompt
 fi
 
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 if [ `uname` == 'Darwin' ]; then
     if [ -f ~/.bash_aliases_mac ]; then
         . ~/.bash_aliases_mac
-    fi
-elif [ `uname` == 'Linux' ]; then
-    if [ -f ~/.bash_aliases ]; then
-        . ~/.bash_aliases
     fi
 fi
 

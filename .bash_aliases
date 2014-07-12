@@ -1,6 +1,3 @@
-export TERM="screen-256color"
-eval "`dircolors -b ~/.dircolors`"
-
 # Update configurations, basically move to the rights folders and make git pull.
 # Todo: make a script instead alias
 repo=$(readlink -f ~/.bashrc | sed "s/.bashrc//")

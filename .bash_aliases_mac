@@ -1,6 +1,3 @@
-export TERM="screen-256color"
-
-
 # Update configurations, basically move to the rights folders and make git pull.
 repo=$(readlink ~/.bashrc | sed "s/.bashrc//")
 alias ub='pathOrigin=${PWD};
