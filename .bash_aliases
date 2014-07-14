@@ -1,24 +1,4 @@
-# Update configurations, basically move to the rights folders and make git pull.
-# Todo: make a script instead alias
-repo=$(readlink -f ~/.bashrc | sed "s/.bashrc//")
-alias ub='pathOrigin=${PWD};
-
-          cd ${repo};
-          printf ">>> update bash, tmux and git config\n";
-          git pull --rebase;
-
-          cd ~/.local/bin/;
-          printf ">>> update local bin\n";
-          git pull --rebase;
-
-          printf ">>> Reload conf\n";
-          source ~/.bashrc;
-
-          cd ~/.vim;
-          printf ">>> update vim\n";
-          git pull --rebase;
-
-          cd ${pathOrigin};'
+alias ub='updateConf.sh'
 
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
 alias eb='vim -p ~/.bashrc ~/.bash_aliases ~/.bash_prompt'
