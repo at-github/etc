@@ -29,7 +29,7 @@ alias r='rm'
 alias df='df -H'
 alias du='du -ch'
 
-alias todo='grep -is todo *'
+alias todo='g -is todo *'
 
 alias v='vim -p'
 alias vi="v"
