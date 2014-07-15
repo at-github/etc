@@ -18,6 +18,8 @@ alias g='grep'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
+alias f='find'
+
 alias ps='ps aux'
 
 alias cp='cp -i'
