@@ -36,7 +36,9 @@ alias todo='g -is todo *'
 alias v='vim -p'
 alias vi="v"
 alias vie="v +:Explore"
+alias ve="vie"
 alias vin="v +:NERDTreeToggle"
+alias vn="vin"
 
 alias gitdiff="watch --color -n 2 git diff --color=always"
 alias gd="gitdiff"
