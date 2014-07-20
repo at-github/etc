@@ -5,7 +5,7 @@ alias eb='vim -p ~/.bashrc ~/.bash_aliases ~/.bash_prompt'
 
 alias c='cd'
 #Move to the near root git folder
-alias cdg='cd $(git rev-parse --show-cdup)'
+alias cdg='cd $(findRepo.sh)'
 
 alias ls='ls --color=auto'
 alias ll='ls -lFh --group-directories-first'
