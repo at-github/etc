@@ -1,11 +1,12 @@
 alias ub='updateConf.sh'
-
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
 alias eb='vim -p ~/.bashrc ~/.bash_aliases ~/.bash_prompt'
 
 alias c='cd'
 #Move to the near root git folder
 alias cdg='cd $(findRepo.sh)'
+alias cbash='c ~/.local/var/bashAndTmux'
+alias cbin='c ~/.local/bin'
 
 alias ls='ls --color=auto'
 alias ll='ls -lFh --group-directories-first'
@@ -39,6 +40,8 @@ alias vie="v +:Explore"
 alias ve="vie"
 alias vin="v +:NERDTreeToggle"
 alias vn="vin"
+alias ev='v -p ~/.vimrc ~/.vim/.vimrc.bepo'
+alias cv='c ~/.vim/'
 
 alias gitdiff="watch --color -n 2 git diff --color=always"
 alias gd="gitdiff"
