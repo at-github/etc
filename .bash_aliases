@@ -16,6 +16,7 @@ alias la='ls -a'
 
 alias grep='grep -n --color=auto'
 alias g='grep'
+alias gg='git grep -n'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
