@@ -9,6 +9,10 @@
 [alias]
     st   = status -sbuno
     br   = branch
+    d    = diff
+    ds   = diff --staged
+    a    = add
+    ap   = add -p
     ci   = commit
     cci  = commit -c HEAD
     co   = checkout
