@@ -22,7 +22,7 @@
     g    = grep -n
 
 [core]
-    pager = cat
+    pager = less
     editor = vim
     whitespace = -trailing-space
 
