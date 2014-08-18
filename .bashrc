@@ -1,5 +1,5 @@
 export TERM="screen-256color"
-if [ `uname` != 'Darwin' ]; then
+if [ `uname` != 'Darwin' ] && [ `uname` != 'MINGW32_NT-6.2' ]; then
     eval "`dircolors -b ~/.dircolors`"
 fi
 
