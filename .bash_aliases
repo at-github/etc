@@ -30,6 +30,8 @@ alias m='mv'
 alias rm='rm -i'
 alias r='rm'
 
+alias cat='cat -n'
+
 alias df='df -H'
 alias du='du -ch'
 
