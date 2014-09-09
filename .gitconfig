@@ -73,4 +73,4 @@
 [status]
     submoduleSummary = true
 [commit]
-    template = ~/.gitmessage.txt
+    template = ~/.gitmessage
