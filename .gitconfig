@@ -11,6 +11,7 @@
     br   = branch
     d    = diff
     ds   = diff --staged
+    dw   = diff --color-words
     a    = add
     ap   = add -p
     ci   = commit
