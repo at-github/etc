@@ -26,6 +26,10 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
     . /usr/local/etc/bash_completion.d/git-completion.bash
 fi
 
+if [[ -f $(brew --prefix)/etc/bash_completion ]]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
 if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
     . /usr/local/etc/bash_completion.d/git-prompt.sh
 fi
@@ -33,11 +37,6 @@ fi
 #for vddev cent os
 if [ -f /etc/bash_completion.d/git ]; then
     . /etc/bash_completion.d/git
-fi
-
-#for mac os ?
-if [ -f /usr/local/etc/bash_completion.d/tmux ]; then
-    . /usr/local/etc/bash_completion.d/tmux
 fi
 
 #for debian
