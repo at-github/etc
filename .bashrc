@@ -26,7 +26,7 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
     . /usr/local/etc/bash_completion.d/git-completion.bash
 fi
 
-if [[ -f $(brew --prefix)/etc/bash_completion ]]; then
+if [[ $(which brew) != '' && -f $(brew --prefix)/etc/bash_completion ]]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
