@@ -22,7 +22,9 @@ alias fgrep='fgrep --color=auto'
 
 alias f='find'
 
-alias ps='ps aux'
+#Process shouldn't have a terminal
+#By user
+alias ps='ps ux'
 
 alias cp='cp -i'
 alias mv='mv -i'
