@@ -12,6 +12,7 @@
     d    = diff
     ds   = diff --staged
     dw   = diff --color-words
+    dt   = difftool
     a    = add
     ap   = add -p
     ci   = commit
@@ -33,6 +34,7 @@
     mnemonicPrefix = true
     #Todo: to document, minimal regex for diff words ?
     wordRegex = .
+	tool = vimdiff
 
 [fetch]
     #Todo: to document
@@ -73,5 +75,9 @@
 
 [status]
     submoduleSummary = true
+
 [commit]
     template = ~/.gitmessage
+
+[difftool]
+	prompt = false
