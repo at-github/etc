@@ -33,6 +33,7 @@ alias rm='rm -i'
 alias r='rm'
 
 alias cat='cat -n'
+alias hi='highlight -O ansi'
 
 alias df='df -H'
 alias du='du -ch'
