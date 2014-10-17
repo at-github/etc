@@ -42,6 +42,5 @@ PS1+="${style_chars} " # :
 PS1+="\n" # Newline
 PS1+="${style_path}\w" # Working directory
 PS1+="\[${RESET}\]"
-PS1+=" |"
-PS1+='$(__git_ps1 " %s")'
+PS1+=' $(__git_ps1 "| %s")'
 PS1+="\n" # Newline
