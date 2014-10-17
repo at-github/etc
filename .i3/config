@@ -165,7 +165,6 @@ exec i3-config-wizard
 
 bindsym Mod1+Shift+p exec i3lock -c 000000
 
-exec --no-startup-id xautolock -time 1 -locker "/home/tarik/.local/bin/suspendAndLock.sh"
 exec_always ~/.local/bin/dual-screen01_hdmi2-hdmi1.sh
 workspace 1 output HDMI2
 workspace 2 output HDMI1
