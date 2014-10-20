@@ -48,7 +48,7 @@ alias ve="vie"
 alias vin="v +:NERDTreeToggle"
 alias vn="vin"
 alias ev='v -p ~/.vimrc ~/.vim/.vimrc.bepo'
-alias ev='v -p ~/.nvimrc ~/.nvim/.vimrc.bepo'
+alias evn='v -p ~/.nvimrc ~/.nvim/.vimrc.bepo'
 alias cv='c ~/.vim/'
 alias cnv='c ~/.nvim/'
 
