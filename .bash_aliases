@@ -59,3 +59,5 @@ alias tgd="tmux split-window -h; tmux send-keys gd ENTER"
 alias gitst="watch --color -n 2 git st"
 alias gt="gitst"
 alias tgitst="tmux split-window -h; tmux send-keys gitst ENTER"
+
+alias ei3='v -p ~/.i3status.conf ~/.i3/config'
