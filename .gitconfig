@@ -33,7 +33,7 @@
     #Todo: to document
     mnemonicPrefix = true
     #Todo: to document, minimal regex for diff words ?
-    wordRegex = .
+    wordRegex = [[:alnum:]]+|[^[:space:]]
 	tool = vimdiff
 
 [fetch]
