@@ -1,11 +1,11 @@
-alias ub='updateConf.sh'
+alias ub='python ~/.local/bin/pullRepositories.py'
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
 alias eb='vim -p ~/.bashrc ~/.bash_aliases ~/.bash_prompt'
 
 alias c='cd'
 #Move to the near root git folder
 alias cdg='cd $(findRepo.sh)'
-alias cbash='c ~/.local/var/bashAndTmux'
+alias cbash='c ~/.local/bashAndTmux'
 alias cbin='c ~/.local/bin'
 
 alias ls='ls --color=auto'
