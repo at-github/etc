@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 platform=$(uname);
 declare -a files=('.bash_aliases' '.bash_aliases_mac' '.bash_mancolor' '.bash_profile' '.bash_prompt' '.bashrc' '.dircolors' '.gitconfig' '.gitignore' '.tmux.conf' '.i3/config' '.i3status.conf');
+folderLocal=${HOME}'/.local/bashAndTmux'
 
 echo "_| Start to install, make symbolic link config files |_"
 
@@ -18,6 +19,8 @@ do
     else
         folder=''
     fi
+
+    cd $folderLocal
 
     # ln -b doesn't work on mac os
     if [ ${platform} == 'Darwin' ]; then
@@ -41,3 +44,5 @@ if [[ "${answer}" == 'y' || "${answer}" == 'yes' ]]; then
 else
     echo "Bye!"
 fi
+
+cd -
