@@ -6,6 +6,9 @@ export HISTIGNORE="history:clear"
 #Ignore cmd starting with space and duplicate command following
 export HISTCONTROL="ignoreboth"
 
+#Shorter path in prompt
+PROMPT_DIRTRIM=3
+
 if [ `uname` != 'Darwin' ] && [ `uname` != 'MINGW32_NT-6.2' ]; then
     eval "`dircolors -b ~/.dircolors`"
 fi
