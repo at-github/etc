@@ -1,4 +1,4 @@
-alias ub='python ~/.local/bin/pullRepositories.py'
+alias ub='python ~/.local/bin/pullRepositories.py; clear'
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
 alias eb='vim -p ~/.bashrc ~/.bash_aliases ~/.bash_prompt'
 
