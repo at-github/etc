@@ -49,6 +49,11 @@ if [ -f /etc/bash_completion.d/git ]; then
     . /etc/bash_completion.d/git
 fi
 
+#for vddev cent os, with git 2.2
+if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
+    . /usr/share/git-core/contrib/completion/git-prompt.sh
+fi
+
 #for debian
 if [ -f /usr/share/doc/tmux/examples/bash_completion_tmux.sh ]; then
     . /usr/share/doc/tmux/examples/bash_completion_tmux.sh
