@@ -2,6 +2,10 @@ alias ub='python ~/.local/bin/pullRepositories.py; clear'
 alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
 alias eb='vim -p ~/.bashrc ~/.bash_aliases ~/.bash_prompt'
 
+alias t='tmux -u -2'
+alias tt='t att'
+alias ttt='tmuxTemplateMyconf.sh'
+
 alias c='cd'
 #Move to the near root git folder
 alias cdg='cd $(findRepo.sh)'
