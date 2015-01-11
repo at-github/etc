@@ -3,7 +3,7 @@ alias rb='source ~/.bashrc; printf "bashrc reloaded!"'
 alias eb='vim -p ~/.bashrc ~/.bash_aliases ~/.bash_prompt'
 
 alias t='tmux -u -2'
-alias tt='t att'
+alias tt='t att -d'
 alias ttt='tmuxTemplateMyconf.sh'
 
 alias c='cd'
