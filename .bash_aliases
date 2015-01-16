@@ -46,7 +46,7 @@ alias todo='g -is todo *'
 
 alias v='vim -p'
 alias nv='nvim -p'
-alias vi="v"
+alias vi="v -u NONE"
 alias vie="v +:Explore"
 alias ve="vie"
 alias vin="v +:NERDTreeToggle"
@@ -55,6 +55,7 @@ alias ev='v -p ~/.vimrc ~/.vim/.vimrc.bepo'
 alias evn='v -p ~/.nvimrc ~/.nvim/.vimrc.bepo'
 alias cv='c ~/.vim/'
 alias cnv='c ~/.nvim/'
+alias cg='editGitModify.sh'
 
 alias gitdiff="watch --color -n 2 git diff --color=always"
 alias gd="gitdiff"
