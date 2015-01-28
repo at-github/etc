@@ -75,6 +75,7 @@
 
 [status]
     submoduleSummary = true
+    showUntrackedFiles = all
 
 [commit]
     template = ~/.gitmessage
