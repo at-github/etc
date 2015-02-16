@@ -43,4 +43,4 @@ PS1+="\n" # Newline
 PS1+="${style_path}\w" # Working directory
 PS1+="\[${RESET}\]"
 PS1+=' $(__git_ps1 "| %s")' # Git informations
-PS1+="\n" # Newline
+PS1+="\n\[${BOLD}\]↳ \[${RESET}\]" # Newline
