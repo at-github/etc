@@ -54,6 +54,10 @@ if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
     . /usr/share/git-core/contrib/completion/git-prompt.sh
 fi
 
+if [ -f ~/.local/bin/git_ps1.sh ]; then
+    . ~/.local/bin/git_ps1.sh
+fi
+
 #for debian
 if [ -f /usr/share/doc/tmux/examples/bash_completion_tmux.sh ]; then
     . /usr/share/doc/tmux/examples/bash_completion_tmux.sh
