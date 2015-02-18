@@ -24,7 +24,7 @@ bindsym $mod+Return exec konsole
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run -b -fn 'xft:Terminus:pixelsize=24' -nb '#333333' -nf '#f9f9f9' -sb '#2d2d2d' -sf '#d64937' -p 'Choose'
 
 # change focus
 bindsym $mod+j focus left
@@ -149,6 +149,7 @@ client.urgent           #000000 #000000 #000000
 
 bar {
   status_command i3status
+  position top
   colors {
     background #2d2d2d
     statusline #dedede
