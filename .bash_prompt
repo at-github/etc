@@ -13,9 +13,9 @@ SOLAR_CYAN=$(tput setaf 37)
 SOLAR_GREEN=$(tput setaf 64)
 SOLAR_WHITE=$(tput setaf 254)
 
-style_user="\[${RESET}${SOLAR_ORANGE}\]"
+style_user="\[${RESET}$(tput setaf 1)\]"
 style_host="\[${RESET}${SOLAR_YELLOW}\]"
-style_path="\[${RESET}${SOLAR_GREEN}\]"
+style_path="\[${RESET}$(tput setab 237)$(tput setaf 1)\]"
 style_chars="\[${RESET}${SOLAR_WHITE}\]"
 style_branch="${SOLAR_CYAN}"
 
@@ -40,7 +40,7 @@ PS1+="${style_chars}@" # @
 PS1+="${style_host}\h" # Host
 PS1+="${style_chars} " # :
 PS1+="\n" # Newline
-PS1+="${style_path}\w" # Working directory
-PS1+="\[${RESET}\]"
-PS1+=' $(__git_ps1 "|  %s")' # Git informations
+PS1+="${style_path}\w " # Working directory
+PS1+="${RESET}"
+PS1+=' $(__git_ps1 " %s")' # Git informations
 PS1+="\n\[${BOLD}\]➜ \[${RESET}\]" # Newline
