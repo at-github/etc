@@ -93,4 +93,9 @@ if [ -f ~/.bashrc_local ]; then
     . ~/.bashrc_local
 fi
 
+
+if [[ ! -d ~/.local/tmp ]]; then
+    mkdir ~/.local/tmp
+fi
+
 umask 0002
