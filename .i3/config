@@ -172,7 +172,7 @@ bar {
 #######################################################################
 exec i3-config-wizard
 
-bindsym $mod+Shift+p exec i3lock -c 000000
+bindsym $mod+Shift+p exec xscreensaver-command -lock
 bindsym $mod+n exec nautilus ~
 
 exec_always ~/.local/bin/dual-screen01_hdmi2-hdmi1.sh
