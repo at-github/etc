@@ -178,6 +178,7 @@ workspace 1 output HDMI2
 workspace 2 output HDMI1
 workspace 3 output HDMI1
 
+exec --no-startup-id i3-msg 'exec xscreensaver -no-splash'
 exec --no-startup-id i3-msg 'workspace 5; exec firefox; workspace 5'
 exec --no-startup-id i3-msg 'workspace 2; exec konsole; workspace 2'
 exec --no-startup-id i3-msg 'workspace 1; exec firefox-dev-edition; workspace 1'
