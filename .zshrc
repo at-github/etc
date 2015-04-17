@@ -16,3 +16,15 @@ setopt correctall
 
 # Use regex in command like ls
 setopt extendedglob
+
+# Aliases
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# Todo: printing not found :s
+# if [ `uname` == 'Darwin' ]; then
+#     if [ -f ~/.bash_aliases_mac ]; then
+#         . ~/.bash_aliases_mac
+#     fi
+# fi
