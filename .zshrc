@@ -13,3 +13,6 @@ zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=36=31"
 
 # Correct command
 setopt correctall
+
+# Use regex in command like ls
+setopt extendedglob
