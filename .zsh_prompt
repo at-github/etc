@@ -1,8 +1,18 @@
-PS1=%n
-PS1+=' on '
-PS1+=%M
-PS1+=' in'
+RESET="$(tput sgr0)"
+RED=1
+MUSTARD=136
+DARKGRAY=237
+
+FRED="$(tput setaf $RED)"
+FMUSTARD="$(tput setaf $MUSTARD)"
+BDARKGRAY="$(tput setab $DARKGRAY)"
+
+PS1=$FRED
+PS1+=%n
+PS1+=$RESET' on '
+PS1+=$FMUSTARD%M
+PS1+=$RESET' in'
 PS1+=$'\n'
-PS1+=%~
+PS1+=$BDARKGRAY$FRED%~$RESET
 PS1+=$'\n'
 PS1+='➜ '
