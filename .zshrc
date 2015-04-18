@@ -28,3 +28,7 @@ fi
 #         . ~/.bash_aliases_mac
 #     fi
 # fi
+
+if [ -f ~/.zsh_prompt ]; then
+    . ~/.zsh_prompt
+fi
