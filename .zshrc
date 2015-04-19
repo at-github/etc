@@ -22,6 +22,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.zsh_aliases ]; then
+    . ~/.zsh_aliases
+fi
+
 # Todo: printing not found :s
 # if [ `uname` == 'Darwin' ]; then
 #     if [ -f ~/.bash_aliases_mac ]; then

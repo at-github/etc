@@ -1,0 +1,1 @@
+alias rz='source ~/.zshrc; printf "zshrc reloaded!"'
