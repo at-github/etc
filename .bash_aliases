@@ -5,6 +5,7 @@ alias eb='vim -p ~/.bashrc ~/.bash_aliases ~/.bash_prompt'
 alias t='tmux -u -2'
 alias tt='t att -d'
 alias ttt='tmuxTemplateMyconf.sh'
+alias tls='t ls'
 
 alias c='cd'
 #Move to the near root git folder
