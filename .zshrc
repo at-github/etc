@@ -36,3 +36,6 @@ fi
 if [ -f ~/.zsh_prompt ]; then
     . ~/.zsh_prompt
 fi
+
+# Mode vim
+bindkey -v
