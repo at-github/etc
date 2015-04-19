@@ -1,5 +1,4 @@
-# Todo: Set folder dynamically
-source ~/.local/bashAndTmux/zshrc.sh
+source $TA_SOURCE_CONF/zshrc.sh
 RESET="$(tput sgr0)"
 RED=1
 MUSTARD=136

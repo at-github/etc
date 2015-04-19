@@ -1,3 +1,6 @@
+# Define global, easy to find source not linking on home root
+export TA_SOURCE_CONF="${HOME}/.local/bashAndTmux"
+
 # Completion enabled
 autoload -U compinit
 compinit
