@@ -9,14 +9,13 @@ FRED="$(tput setaf $RED)"
 FMUSTARD="$(tput setaf $MUSTARD)"
 BDARKGRAY="$(tput setab $DARKGRAY)"
 
-PS1=$FRED
-PS1+=%n
-PS1+=$RESET' on '
-PS1+=$FMUSTARD%M
-PS1+=$RESET' in'
-PS1+=$'\n'
-PS1+=$BDARKGRAY$FRED%~$RESET
-# Wip git
-PS1+='$(git_super_status)'
-PS1+=$'\n'
-PS1+='➜ '
+PROMPT=$FRED
+PROMPT+=%n
+PROMPT+=$RESET' on '
+PROMPT+=$FMUSTARD%M
+PROMPT+=$RESET' in'
+PROMPT+=$'\n'
+PROMPT+=$BDARKGRAY$FRED%~$RESET
+PROMPT+='$(git_super_status)'
+PROMPT+=$'\n'
+PROMPT+='➜ '
