@@ -54,6 +54,11 @@ if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
     . /usr/share/git-core/contrib/completion/git-prompt.sh
 fi
 
+#Source this path so some program like ifconfig is autocompleted
+if [ -d /sbin ]; then
+    PATH=/sbin:$PATH
+fi
+
 if [ -f ~/.local/bin/git_ps1.sh ]; then
     . ~/.local/bin/git_ps1.sh
 fi
