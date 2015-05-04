@@ -34,7 +34,7 @@
     mnemonicPrefix = true
     #Todo: to document, minimal regex for diff words ?
     wordRegex = [[:alnum:]]+|[^[:space:]]
-	tool = vimdiff
+    tool = vimdiff
 
 [fetch]
     #Todo: to document
@@ -81,4 +81,4 @@
     template = ~/.gitmessage
 
 [difftool]
-	prompt = false
+    prompt = false
