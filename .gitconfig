@@ -12,6 +12,8 @@
     d    = diff
     ds   = diff --staged
     dw   = diff --color-words
+    dws  = diff --staged --color-words
+    dsw  = diff --staged --color-words
     dt   = difftool
     a    = add
     ap   = add -p
