@@ -9,6 +9,16 @@ export HISTCONTROL="ignoreboth"
 #Shorter path in prompt
 PROMPT_DIRTRIM=3
 
+#Ubuntu Debian ?
+if [ -f /etc/bash.bashrc ]; then
+    . /etc/bash.bashrc
+fi
+
+#Centos
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
 if [ `uname` != 'Darwin' ] && [ `uname` != 'MINGW32_NT-6.2' ]; then
     eval "`dircolors -b ~/.dircolors`"
 fi
