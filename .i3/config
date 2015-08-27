@@ -173,12 +173,6 @@ exec i3-config-wizard
 bindsym $mod+Shift+p exec xscreensaver-command -lock
 bindsym $mod+n exec nautilus ~
 
-exec_always ~/.local/bin/dual-screen01_hdmi2-hdmi1.sh
-workspace 1 output HDMI2
-workspace 2 output HDMI1
-workspace 3 output HDMI1
+exec_always ~/.config-screens.sh
 
 exec --no-startup-id i3-msg 'exec xscreensaver -no-splash'
-exec --no-startup-id i3-msg 'workspace 5; exec firefox; workspace 5'
-exec --no-startup-id i3-msg 'workspace 2; exec konsole; workspace 2'
-exec --no-startup-id i3-msg 'workspace 1; exec firefox-dev-edition; workspace 1'
