@@ -58,6 +58,8 @@ alias cv='c ~/.vim/'
 alias cnv='c ~/.nvim/'
 alias cg='editGitModify.sh'
 
+alias ei3='v -p ~/.i3status.conf ~/.i3/config'
+
 alias gitdiff="watch --color -n 2 git diff --color=always"
 alias gd="gitdiff"
 alias tgd="tmux split-window -h; tmux send-keys gd ENTER"
