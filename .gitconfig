@@ -30,6 +30,11 @@
     pager = less
     editor = vim
     whitespace = -trailing-space
+    # core.trustctime
+    # If false, the ctime differences between the index and the working tree are ignored;
+    # useful when the inode change time is regularly modified by something outside Git (file system crawlers and some backup systems).
+    # See git-update-index(1). True by default
+    trustctime = false
 
 [diff]
     #Todo: to document
