@@ -81,3 +81,15 @@ User root displayed on red background, maximum stress guaranty!
 * `tt` eq `tmux -u -2 attach -d`
 
 ##I3
+![Screenshot](screenshot-i3.png)
+
+* Use 'super key' as prefix
+* Status bar is on the top
+
+###Aliases
+* Launching konsole with `mod+return`
+* Kill focused window `mod+Shift+q`
+* You can change focus with same vim arrows (jkl)
+* Fullscreen mode `mod+f`
+* Reload i3 conf file `mod+Shift+c`
+* …
