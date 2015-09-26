@@ -45,6 +45,13 @@ List of some sourced ressources, mainly for completion on mac OS(need brew), deb
 * bash_completion_tmux
 
 ###Aliases
+I'm not listing all but see some significants i think
+* c for cd
+* l for ls -lFh --group-directories-first
+* g for grep -n --color=auto
+* cp, mv & rm need confirm on overwrite
+* vi for vim -u NONE, no plugins no vimrc
+
 ###Other
 ![Screenshot](screenshot-prompt3-root.png)
 
