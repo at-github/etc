@@ -58,5 +58,26 @@ I'm not listing all but see some significants i think
 User root displayed on red background, maximum stress guaranty!
 
 ##Tmux
+![Screenshot](screenshot-tmux.png)
+
+* Prefix 'a'
+* Shorten delay between tmux command
+* Panes label are centered
+* Panes start to index 1 instead 0
+* In status bar you find
+    * on the left
+        * ip (ifconfig inet)
+        * user and host
+    * on the right
+        * session tmux name
+        * and time
+
+###Aliases
+* `<c-a>r` to refresh tmux conf
+* `<c-a>m` to enable mouse mode
+* `<c-a>M` to disable mouse mode (paste with middle mouse click will work)
+* `tls` in bash, list session tmux
+* `t` eq `tmux -u -2`
+* `tt` eq `tmux -u -2 attach -d`
 
 ##I3
