@@ -32,6 +32,9 @@ This configuration need it.
 ###Sourced
 ###Aliases
 ###Other
+![Screenshot](screenshot-prompt3-root.png)
+
+User root displayed on red background, maximum stress guaranty!
 
 ##Tmux
 
