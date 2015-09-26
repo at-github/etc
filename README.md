@@ -2,6 +2,11 @@
 
 Configuration files for some things
 
+##Instal
+
+Launch install.sh script,
+It create symlinks in your home.
+
 ##Git
 
 ###Some aliases
