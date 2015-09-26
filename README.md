@@ -1,8 +1,8 @@
-# conf
+# Conf
 
 Configuration files for some things
 
-##git
+##Git
 
 ###Some aliases
 * pretty log with lg
@@ -18,9 +18,9 @@ Configuration files for some things
 Create a template commit message in your home.
 This configuration need it.
 
-##bash
+##Bash
 
-###prompt
+###Prompt
 
 ![Screenshot](screenshot-prompt1-git-status.png)
 ####Status git:
@@ -30,8 +30,9 @@ This configuration need it.
 * ⚑ for stash list
 
 ###Sourced
-###aliases
+###Aliases
+###Other
 
-##tmux
+##Tmux
 
-##i3
+##I3
