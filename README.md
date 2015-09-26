@@ -39,6 +39,11 @@ This configuration need it.
 * ⤧ local and remote have diverged
 
 ###Sourced
+List of some sourced ressources, mainly for completion on mac OS(need brew), debian and centos.
+* bash_completion
+* git-prompt
+* bash_completion_tmux
+
 ###Aliases
 ###Other
 ![Screenshot](screenshot-prompt3-root.png)
