@@ -20,6 +20,18 @@ This configuration need it.
 
 ##bash
 
+###prompt
+
+![Screenshot](screenshot-prompt1-git-status.png)
+####Status git:
+* ⚡ for tracked modified files
+* ✓ for added to stage files
+* ✗ for untracked files
+* ⚑ for stash list
+
+###Sourced
+###aliases
+
 ##tmux
 
 ##i3
