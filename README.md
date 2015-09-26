@@ -23,11 +23,15 @@ This configuration need it.
 ###Prompt
 
 ![Screenshot](screenshot-prompt1-git-status.png)
+![Screenshot](screenshot-prompt2-git-remote.png)
 ####Status git:
 * ⚡ for tracked modified files
 * ✓ for added to stage files
 * ✗ for untracked files
 * ⚑ for stash list
+* ↗ for local are ahead from remote
+* ↖ for local are behind from remote
+* ⤧ local and remote have diverged
 
 ###Sourced
 ###Aliases
