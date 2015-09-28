@@ -14,6 +14,9 @@ zstyle ':completion:*' menu select
 #set autocompletion of comman line switches for aliases
 setopt completealiases
 
+#Ignore duplicate entries in history
+setopt HIST_IGNORE_DUPS
+
 # Correct command
 setopt correctall
 
