@@ -1,1 +1,2 @@
 alias rz='source ~/.zshrc; printf "zshrc reloaded!"'
+alias ez='v -p ~/.zshrc ~/.zsh_aliases ~/.zsh_prompt'
