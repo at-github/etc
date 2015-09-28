@@ -1,18 +1,18 @@
 # Define global, easy to find source not linking on home root
 export TA_SOURCE_CONF="${HOME}/.local/bashAndTmux"
 
-# Completion enabled
-autoload -U compinit
-compinit
-
 # Enabled default prompt
 autoload -U promptinit
 promptinit
 
-# Customize completion kill
-zmodload zsh/complist
-setopt extendedglob
-zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=36=31"
+# Completion enabled
+autoload -U compinit
+compinit
+
+#Enable auto comletion menu, need 2 tab
+zstyle ':completion:*' menu select
+#set autocompletion of comman line switches for aliases
+setopt completealiases
 
 # Correct command
 setopt correctall
