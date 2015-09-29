@@ -30,6 +30,9 @@ staged = str(nb_staged)
 conflicts = str(nb_U)
 changed = str(nb_changed)
 nb_untracked = len([0 for status in Popen(['git','status','--porcelain',],stdout=PIPE).communicate()[0].decode("utf-8").splitlines() if status.startswith('??')])
+nb_stashed = len([0 for status in Popen(['git','stash','list',],stdout=PIPE).communicate()[0].decode("utf-8").splitlines() ])
+stashed = str(nb_stashed)
+
 untracked = str(nb_untracked)
 
 ahead, behind = 0,0
@@ -60,6 +63,7 @@ out = ' '.join([
 	conflicts,
 	changed,
 	untracked,
+	stashed,
 	])
 print(out, end='')
 
