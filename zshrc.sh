@@ -59,6 +59,7 @@ function update_current_git_vars() {
     GIT_CONFLICTS=$__CURRENT_GIT_STATUS[5]
     GIT_CHANGED=$__CURRENT_GIT_STATUS[6]
     GIT_UNTRACKED=$__CURRENT_GIT_STATUS[7]
+    GIT_STASHED=$__CURRENT_GIT_STATUS[8]
 }
 
 
@@ -73,6 +74,9 @@ git_super_status() {
             STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_AHEAD$GIT_AHEAD%{${reset_color}%}"
         fi
         STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_SEPARATOR"
+        if [ "$GIT_STASHED" -ne "0" ]; then
+            STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_STASHED$GIT_STASHED%{${reset_color}%}"
+        fi
         if [ "$GIT_STAGED" -ne "0" ]; then
             STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_STAGED$GIT_STAGED%{${reset_color}%}"
         fi
@@ -99,6 +103,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_SEPARATOR=" "
 ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[white]%}"
 ZSH_THEME_GIT_PROMPT_STAGED="%{$fg[green]%}%{✓%G%}"
+ZSH_THEME_GIT_PROMPT_STASHED="%{$fg[yellow]%}%{⚑%G%}"
 ZSH_THEME_GIT_PROMPT_CONFLICTS="%{$fg_bold[red]%}%{✖%G%}"
 ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg[yellow]%}%{⚡%G%}"
 ZSH_THEME_GIT_PROMPT_BEHIND="%{↓%G%}"
