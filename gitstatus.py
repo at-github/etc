@@ -12,6 +12,7 @@ branch, error = gitsym.communicate()
 
 error_string = error.decode('utf-8')
 
+#Not a git repo
 if 'fatal: Not a git repository' in error_string:
 	sys.exit(0)
 
@@ -19,8 +20,12 @@ branch = branch.decode("utf-8").strip()[11:]
 
 res, err = Popen(['git','diff','--name-status'], stdout=PIPE, stderr=PIPE).communicate()
 err_string = err.decode('utf-8')
+
+#?error
 if 'fatal' in err_string:
 	sys.exit(0)
+
+#Via diff
 changed_files = [namestat[0] for namestat in res.decode("utf-8").splitlines()]
 staged_files = [namestat[0] for namestat in Popen(['git','diff', '--staged','--name-status'], stdout=PIPE).communicate()[0].splitlines()]
 nb_changed = len(changed_files) - changed_files.count('U')
