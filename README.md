@@ -57,6 +57,10 @@ I'm not listing all but see some significants i think
 
 User root displayed on red background, maximum stress guaranty!
 
+##Zsh
+
+Coming soon…
+
 ##Tmux
 ![Screenshot](screenshot-tmux.png)
 
