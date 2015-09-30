@@ -34,7 +34,7 @@ if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
 
-if [ `uname`=='Darwin' ]; then
+if [[ `uname` == 'Darwin' ]]; then
     if [ -f ~/.bash_aliases_mac ]; then
         . ~/.bash_aliases_mac
     fi
