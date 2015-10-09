@@ -1,4 +1,5 @@
 source $TA_SOURCE_CONF/zshrc.sh
+#Todo: use a common color file and variable
 RESET="$(tput sgr0)"
 
 #Based on solarized
