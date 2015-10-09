@@ -198,7 +198,7 @@ $PR_NO_COLOUR '
     PROMPT+=$FBASE0'%$PR_PWDLEN<...<%~%<< '$RESET$'\n'
     PROMPT+=$FYELLOW$'\n➜ $RESET'
 
-    RPROMPT='$(git_super_status)'
+    RPROMPT=%{$FMAGENTA%}'$(git_super_status)'%{$RESET%}
 
     PS2='$PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
 $PR_BLUE$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT(\
