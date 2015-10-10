@@ -2,6 +2,7 @@ export TERM="screen-256color"
 
 # Define global, easy to find source not linking on home root
 export TA_SOURCE_CONF="${HOME}/.local/bashAndTmux"
+export TA_SOURCE_BIN="${HOME}/.local/bin"
 
 # Enabled default prompt
 autoload -U promptinit
