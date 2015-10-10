@@ -1,49 +1,5 @@
 source $TA_SOURCE_CONF/zshrc.sh
-#Todo: use a common color file and variable
-RESET="$(tput sgr0)"
-
-#Based on solarized
-BASE0=244
-BASE1=245
-BASE2=254
-BASE3=230
-
-BASE00=241
-BASE01=240
-BASE02=235
-BASE03=234
-
-PURPLE=31
-BLUE=33
-CYAN=37
-VIOLET=61
-GREEN=64
-MAGENTA=125
-YELLOW=136
-RED=160
-ORANGE=166
-
-DARKGRAY=237
-
-FBASE00="$(tput setaf $BASE00)"
-FBASE01="$(tput setaf $BASE01)"
-FBASE02="$(tput setaf $BASE02)"
-FBASE03="$(tput setaf $BASE03)"
-
-FBASE0="$(tput setaf $BASE0)"
-FBASE1="$(tput setaf $BASE1)"
-FBASE2="$(tput setaf $BASE2)"
-FBASE3="$(tput setaf $BASE3)"
-
-FPURPLE="$(tput setaf $PURPLE)"
-FBLUE="$(tput setaf $BLUE)"
-FCYAN="$(tput setaf $CYAN)"
-FVIOLET="$(tput setaf $VIOLET)"
-FGREEN="$(tput setaf $GREEN)"
-FMAGENTA="$(tput setaf $MAGENTA)"
-FYELLOW="$(tput setaf $YELLOW)"
-FRED="$(tput setaf $RED)"
-BDARKGRAY="$(tput setab $DARKGRAY)"
+source $TA_SOURCE_BIN/lib/colors.sh
 
 PROMPT_RIGHT=$FRED
 PROMPT_RIGHT+=%n
