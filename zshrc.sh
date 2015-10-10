@@ -73,7 +73,7 @@ git_super_status() {
         if [ "$GIT_AHEAD" -ne "0" ]; then
             STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_SEPARATOR$ZSH_THEME_GIT_PROMPT_AHEAD$GIT_AHEAD%{${reset_color}%}"
         fi
-        STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_SEPARATOR"
+        STATUS="$STATUS:"
         if [ "$GIT_STASHED" -ne "0" ]; then
             STATUS="$STATUS$ZSH_THEME_GIT_PROMPT_STASHED$GIT_STASHED%{${reset_color}%}$ZSH_THEME_GIT_PROMPT_SEPARATOR"
         fi
@@ -99,7 +99,7 @@ git_super_status() {
 
 # Default values for the appearance of the prompt. Configure at will.
 ZSH_THEME_GIT_PROMPT_PREFIX=" "
-ZSH_THEME_GIT_PROMPT_SUFFIX=" "
+ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_SEPARATOR=" "
 ZSH_THEME_GIT_PROMPT_BRANCH=""
 ZSH_THEME_GIT_PROMPT_STAGED="%{$fg[green]%}%{✓%G%}"
