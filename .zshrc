@@ -14,6 +14,8 @@ compinit
 
 #Enable auto comletion menu, need 2 tab
 zstyle ':completion:*' menu select
+#Enable colors from ls to completion
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 #set autocompletion of comman line switches for aliases
 setopt completealiases
 
