@@ -16,7 +16,7 @@ compinit
 zstyle ':completion:*' menu select
 #Enable colors from ls to completion
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-#set autocompletion of comman line switches for aliases
+#set autocompletion of command line switches for aliases
 setopt completealiases
 
 #Ignore duplicate entries in history
