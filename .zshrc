@@ -16,6 +16,10 @@ compinit
 zstyle ':completion:*' menu select
 #Enable colors from ls to completion
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+#Do not complete an exist word in line
+zstyle ':completion:*:cp:*' ignore-line yes
+zstyle ':completion:*:mv:*' ignore-line yes
+zstyle ':completion:*:rm:*' ignore-line yes
 #set autocompletion of command line switches for aliases
 setopt completealiases
 
