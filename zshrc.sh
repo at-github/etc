@@ -1,3 +1,6 @@
+if [ -f ${TA_SOURCE_BIN}/lib/colors.sh ]; then
+    source ${TA_SOURCE_BIN}/lib/colors.sh
+fi
 # To install source this file from your .zshrc file
 
 # see documentation at http://linux.die.net/man/1/zshexpn
