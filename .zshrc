@@ -48,10 +48,10 @@ if [[ `uname` == 'Darwin' ]]; then
     fi
 fi
 
-if [ -f ~/.zsh_prompt ]; then
-    . ~/.zsh_prompt
-fi
-
 if [ -d ~/.local/bin ]; then
     PATH=$PATH:~/.local/bin
+fi
+
+if [ -f ~/.zsh_prompt ]; then
+    . ~/.zsh_prompt
 fi
