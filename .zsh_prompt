@@ -103,10 +103,10 @@ setprompt () {
     ###
     # Finally, the prompt.
 
-    PROMPT=$FPURPLE%n$RESET
-    PROMPT+=$RESET' on '$FBLUE%M$'$RESET\n'
-    PROMPT+=$FBASE0'%$PR_PWDLEN<...<%~%<< '$RESET$'\n'
-    PROMPT+=$FYELLOW$'\n➜ $RESET'
+    PROMPT=%{$FPURPLE%}%n%{$RESET%}
+    PROMPT+=%{$RESET%}' on '%{$FBLUE%}%M$'%{$RESET%}\n'
+    PROMPT+=%{$FBASE0%}'%$PR_PWDLEN<...<%~%<< '%{$RESET%}$'\n'
+    PROMPT+=%{$FYELLOW%}$'\n➜ %{$RESET%}'
 
     RPROMPT=%{$FMAGENTA%}'$(git_super_status)'%{$RESET%}
 }
