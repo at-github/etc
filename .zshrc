@@ -1,3 +1,5 @@
+export TERM="screen-256color"
+
 # Define global, easy to find source not linking on home root
 export TA_SOURCE="${HOME}/.local"
 export TA_SOURCE_CONF="${TA_SOURCE}/bashAndTmux"
