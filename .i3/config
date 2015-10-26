@@ -34,7 +34,17 @@ bindsym $mod+Shift+q kill
 # -sb bg for selected item
 # -sf fg for selected item
 # -fn font
-bindsym $mod+d exec dmenu_run -i -b -l 20 -p '>' -nb '#2d2d2d' -nf '#666666' -sb '#d64937' -sf '#f9f9f9'
+#
+# To manage more easely font, i had to download this
+# http://dl.suckless.org/tools/dmenu-4.5.tar.gz
+# http://tools.suckless.org/dmenu/patches/dmenu-4.5-xft-debian.diff
+# and do this
+# tar zxvf dmenu-4.5.tar.gz
+# cd dmenu-4.5
+# mv ../dmenu-4.5-xft.diff .
+# patch -p1 < dmenu-4.5-xft.diff
+#
+bindsym $mod+d exec dmenu_run -i -b -l 20 -p '➜' -nb '#2d2d2d' -nf '#777777' -sb '#d64937' -sf '#f9f9f9' -fn 'Powerline DejaVu Sans Mono-10'
 
 # change focus
 bindsym $mod+j focus left
