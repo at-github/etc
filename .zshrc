@@ -55,3 +55,15 @@ fi
 if [ -f ~/.zsh_prompt ]; then
     . ~/.zsh_prompt
 fi
+
+if [ ! -d ~/.local/tmp ]; then
+    mkdir ~/.local/tmp
+fi
+
+display_for_tmux_path=~/.local/tmp/.display_for_tmux
+
+if [[ "$TMUX" == '' ]]; then
+    echo $DISPLAY > ${display_for_tmux_path}
+elif [ -f ${display_for_tmux_path} ] ; then
+    export DISPLAY=$(\cat ${display_for_tmux_path})
+fi
