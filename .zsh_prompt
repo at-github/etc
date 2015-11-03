@@ -106,7 +106,8 @@ setprompt () {
     PROMPT=%{$FPURPLE%}%n%{$RESET%}
     PROMPT+=%{$RESET%}' on '%{$FBLUE%}%M$'%{$RESET%}\n'
     PROMPT+=%{$FBASE0%}'%$PR_PWDLEN<...<%~%<< '%{$RESET%}$'\n'
-    PROMPT+=%{$FYELLOW%}$'\n➜ %{$RESET%}'
+    #                       Escape special char and specify it width
+    PROMPT+=$'%{$FYELLOW%}\n%1{➜%} %{$RESET%}'
 
     RPROMPT=%{$FMAGENTA%}'$(git_super_status)'%{$RESET%}
 }
