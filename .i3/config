@@ -43,6 +43,9 @@ bindsym $mod+Shift+q kill
 # cd dmenu-4.5
 # mv ../dmenu-4.5-xft.diff .
 # patch -p1 < dmenu-4.5-xft.diff
+# install libxft-dev libxft2 libxinerama-dev
+# make
+# sudo make install
 #
 bindsym $mod+d exec dmenu_run -i -b -l 20 -p '➜' -nb '#2d2d2d' -nf '#777777' -sb '#d64937' -sf '#f9f9f9' -fn 'Powerline DejaVu Sans Mono-10'
 
