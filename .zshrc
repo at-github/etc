@@ -69,3 +69,7 @@ elif [ -f ${display_for_tmux_path} ] ; then
 fi
 
 umask 0002
+
+if [ -f ~/.shrc.local ]; then
+    . ~/.shrc.local
+fi
