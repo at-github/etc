@@ -68,8 +68,8 @@ elif [ -f ${display_for_tmux_path} ] ; then
     export DISPLAY=$(\cat ${display_for_tmux_path})
 fi
 
-umask 0002
-
 if [ -f ~/.shrc.local ]; then
     . ~/.shrc.local
 fi
+
+umask 0002
