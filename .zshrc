@@ -4,6 +4,7 @@ export TERM="screen-256color"
 export TA_SOURCE="${HOME}/.local"
 export TA_SOURCE_CONF="${TA_SOURCE}/bashAndTmux"
 export TA_SOURCE_BIN="${TA_SOURCE}/bin"
+export TA_SOURCE_BIN_LIB="${TA_SOURCE_BIN}/lib"
 
 # Enabled default prompt
 autoload -U promptinit
@@ -67,6 +68,16 @@ if [[ "$TMUX" == '' ]]; then
 elif [ -f ${display_for_tmux_path} ] ; then
     export DISPLAY=$(\cat ${display_for_tmux_path})
 fi
+
+# Arrow search with pattern already typed
+if [ -f "${TA_SOURCE_BIN_LIB}/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh" ]; then
+    . "${TA_SOURCE_BIN_LIB}/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh"
+fi
+
+# bind UP and DOWN arrow keys
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
 
 if [ -f ~/.shrc.local ]; then
     . ~/.shrc.local
