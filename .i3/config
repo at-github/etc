@@ -10,6 +10,14 @@
 
 # Create a variable for mod
 set $mod Mod4
+set $red1 #d64937
+set $grey1 #dedede
+set $grey2 #333333
+set $grey3 #999999
+set $grey4 #2d2d2d
+set $grey5 #777777
+set $grey6 #f9f9f9
+set $black #000000
 
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -47,7 +55,7 @@ bindsym $mod+Shift+q kill
 # make
 # sudo make install
 #
-bindsym $mod+d exec dmenu_run -i -b -l 20 -p '➜' -nb '#2d2d2d' -nf '#777777' -sb '#d64937' -sf '#f9f9f9' -fn 'Powerline DejaVu Sans Mono-10'
+bindsym $mod+d exec dmenu_run -i -b -l 20 -p '➜' -nb '$grey4' -nf '$grey5' -sb '$red1' -sf '$grey6' -fn 'Powerline DejaVu Sans Mono-10'
 
 # change focus
 bindsym $mod+j focus left
@@ -168,10 +176,10 @@ bindsym $mod+r mode "resize"
 # f9f9f9    dedede    d64937    333333    2d2d2d
 
      # color_class      border  backg.  text
-client.focused          #d64937 #d64937 #dedede
-client.focused_inactive #333333 #333333 #dedede
-client.unfocused        #333333 #333333 #999999
-client.urgent           #000000 #000000 #000000
+client.focused          $red1   $red1   $grey1
+client.focused_inactive $grey2  $grey2  $grey1
+client.unfocused        $grey2  $grey2  $grey3
+client.urgent           $black  $black  $black
 
 bar {
     # For install py3status on debian
@@ -182,12 +190,12 @@ bar {
     position top
 
     colors {
-        background #2d2d2d
-        statusline #dedede
+        background $grey4
+        statusline $grey1
 
-        focused_workspace   #2d2d2d #dedede #333333
-        active_workspace    #333333 #333333 #d64937
-        inactive_workspace  #2d2d2d #2d2d2d #dedede
+        focused_workspace   $grey4 $grey1 $grey2
+        active_workspace    $grey2 $grey2 $red1
+        inactive_workspace  $grey4 $grey4 $grey1
         urgent_workspace    #dc322f #dc322f #002b36
     }
 }
