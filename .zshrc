@@ -35,8 +35,8 @@ setopt correctall
 setopt extendedglob
 
 # Aliases
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.sh_aliases ]; then
+    . ~/.sh_aliases
 fi
 
 if [ -f ~/.zsh_aliases ]; then
@@ -44,8 +44,8 @@ if [ -f ~/.zsh_aliases ]; then
 fi
 
 if [[ `uname` == 'Darwin' ]]; then
-    if [ -f ~/.bash_aliases_mac ]; then
-        . ~/.bash_aliases_mac
+    if [ -f ~/.sh_aliases_mac ]; then
+        . ~/.sh_aliases_mac
     fi
 fi
 
