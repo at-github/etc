@@ -31,6 +31,10 @@ if [ -f ~/.sh_aliases ]; then
     . ~/.sh_aliases
 fi
 
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 if [ `uname` == 'Darwin' ]; then
     if [ -f ~/.sh_aliases_mac ]; then
         . ~/.sh_aliases_mac
