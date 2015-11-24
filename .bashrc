@@ -1,4 +1,6 @@
-export TERM="screen-256color"
+if [ -f ~/.shrc ]; then
+    . ~/.shrc
+fi
 
 #Not working yet, don't ignore history
 export HISTIGNORE="history:clear"
