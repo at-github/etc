@@ -104,6 +104,12 @@ setprompt () {
     # Finally, the prompt.
 
     PROMPT=%{$FPURPLE%}%n%{$RESET%}
+    if [[ $(whoami) == 'root' ]]; then
+        PROMPT=%{$BORANGE%}%{$FBASE03%}
+    else
+        PROMPT=%{$FPURPLE%}
+    fi
+    PROMPT+=%n%{$RESET%}
     PROMPT+=%{$RESET%}' on '%{$FBLUE%}%M$'%{$RESET%}\n'
     PROMPT+=%{$FBASE0%}'%$PR_PWDLEN<...<%~%<< '%{$RESET%}$'\n'
     #                       Escape special char and specify it width
