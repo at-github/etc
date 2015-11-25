@@ -1,5 +1,7 @@
 if [ -f ~/.shrc ]; then
     . ~/.shrc
+else
+    exit 0
 fi
 
 # Enabled default prompt

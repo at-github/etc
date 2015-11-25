@@ -1,5 +1,7 @@
 if [ -f ~/.shrc ]; then
     . ~/.shrc
+else
+    exit 0
 fi
 
 #Not working yet, don't ignore history
