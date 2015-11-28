@@ -32,7 +32,7 @@ bindsym $mod+Return exec konsole
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
+## dmenu
 # -i case insensitively
 # -b demenu at bottom
 # -l items vertically
@@ -55,8 +55,13 @@ bindsym $mod+Shift+q kill
 # make
 # sudo make install
 #
-bindsym $mod+d exec dmenu_run -i -b -l 20 -p '➜' -nb '$grey4' -nf '$grey5' -sb '$red1' -sf '$grey6' -fn 'Powerline DejaVu Sans Mono-10'
+# bindsym $mod+d exec dmenu_run -i -b -l 20 -p '➜' -nb '$grey4' -nf '$grey5' -sb '$red1' -sf '$grey6' -fn 'Powerline DejaVu Sans Mono-10'
 
+## Rofi
+# Dark
+# bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$grey2" -bg "$grey2" -fg "$grey3" -hlbg "$red1" -hlfg "white" -font "Powerline DejaVu Sans Mono 14"
+# Orange
+bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$red1" -bg "$red1" -fg "$grey2" -hlbg "$grey2" -hlfg "white" -font "Powerline DejaVu Sans Mono 14"
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
