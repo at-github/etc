@@ -202,7 +202,7 @@ bindsym $mod+r mode "resize"
 # f9f9f9    dedede    d64937    333333    2d2d2d
 
      # color_class      border  backg.  text
-client.focused          $red1   $red1   $grey1
+client.focused          $grey2  $grey2  $grey1
 client.focused_inactive $grey2  $grey2  $grey1
 client.unfocused        $grey2  $grey2  $grey3
 client.urgent           $black  $black  $black
@@ -216,7 +216,7 @@ bar {
     position top
 
     colors {
-        background $grey4
+        background $grey2
         statusline $grey1
 
         focused_workspace   $grey4 $grey1 $grey2
