@@ -218,6 +218,8 @@ bar {
     # pypi-install py3status
     status_command py3status -c ~/.i3status.conf
 
+    strip_workspace_numbers yes
+
     position top
 
     colors {
