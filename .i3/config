@@ -10,7 +10,7 @@
 
 # Create a variable for mod
 set $mod Mod4
-set $red1 #d64937
+set $red1  #d64937
 set $grey1 #dedede
 set $grey2 #333333
 set $grey3 #999999
