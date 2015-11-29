@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 platform=$(uname);
-declare -a files=('.zsh_aliases' '.zsh_prompt'  '.shrc' '.zshrc' '.sh_aliases' '.sh_aliases_mac' '.bash_mancolor' '.bash_profile' '.bash_prompt' '.bashrc' '.dircolors' '.gitconfig' '.gitignore' '.tmux.conf' '.i3/config' '.i3status.conf');
+declare -a files=('.zsh_aliases' '.zsh_prompt'  '.shrc' '.zshrc' '.sh_aliases' '.sh_aliases_mac' '.bash_mancolor' '.bash_profile' '.bash_prompt' '.bashrc' '.dircolors' '.gitconfig' '.gitignore' '.tmux.conf' '.i3/config' '.i3status.conf' '.Xresources');
 folderLocal=${HOME}'/.local/bashAndTmux'
 
 echo "_| Start to install, make symbolic link config files |_"

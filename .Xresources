@@ -1,0 +1,18 @@
+rofi.lines: 3
+! element height
+rofi.eh: 2
+! percent
+rofi.width: 100
+rofi.padding: 800
+rofi.opacity: 90
+! border width
+rofi.bw: 0
+rofi.bc: #d64937
+
+rofi.bg: #d64937
+rofi.fg: #333333
+
+rofi.hlbg: #333333
+rofi.hlfg: white
+
+rofi.font: Powerline DejaVu Sans Mono 14
