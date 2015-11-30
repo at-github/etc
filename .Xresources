@@ -1,6 +1,8 @@
 rofi.lines: 3
-! element height
+! height of line
 rofi.eh: 2
+! element height
+rofi.line-margin: 10
 rofi.fullscreen: true
 rofi.width: 100
 rofi.padding: 400
