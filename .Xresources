@@ -1,9 +1,9 @@
 rofi.lines: 3
 ! element height
 rofi.eh: 2
-! percent
+rofi.fullscreen: true
 rofi.width: 100
-rofi.padding: 800
+rofi.padding: 400
 rofi.opacity: 90
 ! border width
 rofi.bw: 0
