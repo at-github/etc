@@ -18,3 +18,5 @@ rofi.hlbg: #333333
 rofi.hlfg: white
 
 rofi.font: Powerline DejaVu Sans Mono 14
+
+rofi.sidebar-mode: true
