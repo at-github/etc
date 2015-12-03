@@ -117,6 +117,7 @@ bindsym $mod+a focus parent
 set $workspacePersonal 
 set $workspaceBrowser  
 set $workspaceTerminal 
+set $workspaceMusic 
 
 bindsym $mod+1 workspace 1: $workspacePersonal
 bindsym $mod+2 workspace 2: $workspaceBrowser
@@ -127,7 +128,7 @@ bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+0 workspace 10: $workspaceMusic
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1: $workspacePersonal
