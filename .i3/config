@@ -245,7 +245,7 @@ bar {
 #######################################################################
 exec i3-config-wizard
 
-bindsym $mod+Shift+p exec xscreensaver-command -lock
+bindsym $mod+Shift+p exec ~/.local/bin/i3lockWallpaper.sh
 bindsym $mod+n exec nautilus ~ --no-desktop
 
 exec --no-startup-id i3-msg ~/.config-screens.sh && ~/.local/bin/wallpaper.sh
