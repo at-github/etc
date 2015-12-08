@@ -112,7 +112,8 @@ setprompt () {
     PROMPT+=%n%{$RESET%}
     PROMPT+=%{$RESET%}' on '%{$FBLUE%}%M$'%{$RESET%}\n'
     PROMPT+=%{$FBASE0%}'%$PR_PWDLEN<...<%~%<< '%{$RESET%}$'\n'
-    PROMPT+=%(1j.(%{$FORANGE%}%j%{$RESET%}).)
+    #jobs
+    PROMPT+=%(1j.%{$FPURPLE%}'%1{%}%j' %{$RESET%}.)
     #                       Escape special char and specify it width
     PROMPT+=$'%{$FYELLOW%}\n%1{➜%} %{$RESET%}'
 
