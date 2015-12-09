@@ -109,6 +109,13 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exit
+
 # focus the child container
 #bindsym $mod+d focus child
 
@@ -144,13 +151,6 @@ bindsym $mod+Shift+0 move container to workspace 10: $workspaceMusic
 
 assign [class="Lollypop"] 10: $workspaceMusic
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exit
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
     # These bindings trigger as soon as you enter the resize mode
@@ -182,6 +182,9 @@ bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master '5%+'
 bindsym XF86AudioMute exec amixer -D pulse sset Master '0'
 
 bindsym $mod+r mode "resize"
+
+bindsym $mod+Shift+p exec ~/.local/bin/i3lockWallpaper.sh
+bindsym $mod+n exec nautilus ~ --no-desktop
 
 #Gaps
 #depencies:
@@ -246,9 +249,6 @@ bar {
 # Please remove the following exec line:
 #######################################################################
 exec i3-config-wizard
-
-bindsym $mod+Shift+p exec ~/.local/bin/i3lockWallpaper.sh
-bindsym $mod+n exec nautilus ~ --no-desktop
 
 exec_always ~/.config-screens.sh && ~/.local/bin/wallpaper.sh
 exec --no-startup-id i3-msg 'exec xscreensaver -no-splash'
