@@ -81,4 +81,9 @@ if [ -f ~/.shrc.local ]; then
     . ~/.shrc.local
 fi
 
+#Speed up git completion, especially "git co <tab>"
+__git_files () {
+    _wanted files expl 'local files' _files
+}
+
 umask 0002
