@@ -99,19 +99,6 @@ if [ -f ~/.bash_mancolor ]; then
     . ~/.bash_mancolor
 fi
 
-if [ -d ~/.local/bin ]; then
-    PATH=$PATH:~/.local/bin
-fi
-
-#Note: for duplicate program concatenate the path at the end
-if [ -d ~/.local/vim ]; then
-    PATH=~/.local/vim/bin:$PATH
-fi
-
-if [ -d ~/.local/git ]; then
-    PATH=~/.local/git/bin:$PATH
-fi
-
 if [ -f ~/.bash_aliases_local ]; then
     . ~/.bash_aliases_local
 fi
@@ -120,17 +107,8 @@ if [ -f ~/.bashrc_local ]; then
     . ~/.bashrc_local
 fi
 
-
-if [[ ! -d ~/.local/tmp ]]; then
-    mkdir ~/.local/tmp
-fi
-
-display_for_tmux_path=~/.local/tmp/.display_for_tmux
-
-if [[ "$TMUX" == '' ]]; then
-    echo $DISPLAY > ${display_for_tmux_path}
-elif [[ -f ${display_for_tmux_path} ]]; then
-    export DISPLAY=$(\cat ${display_for_tmux_path})
+if [ -f ~/.shrc_local ]; then
+    . ~/.shrc_local
 fi
 
 umask 0002
