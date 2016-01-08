@@ -27,7 +27,7 @@ setopt completealiases
 setopt HIST_IGNORE_DUPS
 
 # Correct command
-setopt correctall
+setopt autocd correct
 
 # Use regex in command like ls
 setopt extendedglob
