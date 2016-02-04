@@ -36,3 +36,7 @@ fi
 if [ -d ~/.local/git ]; then
     PATH=~/.local/git/bin:$PATH
 fi
+
+if [ -f ~/.local/bin/lib/completion_go.sh ]; then
+    PATH=~/.local/bin/lib/completion_go.sh:$PATH
+fi
