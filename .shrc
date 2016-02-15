@@ -12,6 +12,12 @@ export TA_SOURCE_BIN_LIB="${TA_SOURCE_BIN}/lib"
 # so tmux can update this port if is changed
 display_for_tmux_path=~/.local/tmp/.display_for_tmux
 
+#Start ssh agent
+if [[ -z "$SSH_AUTH_SOCK" ]]; then
+    eval `ssh-agent -s`
+    ssh-add
+fi
+
 if [[ "$TMUX" == '' ]]; then
     echo $DISPLAY > ${display_for_tmux_path}
 elif [[ -f ${display_for_tmux_path} ]]; then
