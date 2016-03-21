@@ -24,9 +24,9 @@ do
 
     # ln -b doesn't work on mac os
     if [ ${platform} == 'Darwin' ]; then
-        ln -sf "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}"
+        yes | ln -shi "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}" 2>/dev/null
     else
-        ln -sfb "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}"
+        yes | ln -shi "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}" 2>/dev/null
     fi
 done
 
