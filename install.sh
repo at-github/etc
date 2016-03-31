@@ -22,7 +22,7 @@ do
 
     cd $folderLocal
 
-    # ln -b doesn't work on mac os
+    rm "${HOME}"/"${folder}""${file}"
     if [ ${platform} == 'Darwin' ]; then
         yes | ln -shi "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}" 2>/dev/null
     else
