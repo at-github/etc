@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 platform=$(uname);
-declare -a files=('.zsh_aliases' '.zsh_prompt'  '.shrc' '.zshrc' '.zsh' '.sh_aliases' '.sh_aliases_mac' '.bash_mancolor' '.bash_profile' '.bash_prompt' '.bashrc' '.dircolors' '.gitconfig' '.gitignore' '.tmux.conf' '.i3/config' '.i3/pattern-1.png' '.i3/pattern-2.png' '.i3/pattern-3.png' '.i3status.conf' '.Xresources');
+declare -a files=('.zsh_aliases' '.zsh_prompt'  '.shrc' '.zshrc' '.zsh' '.sh_aliases' '.sh_aliases_mac' '.bash_mancolor' '.bash_profile' '.bash_prompt' '.bashrc' '.dircolors' '.gitconfig' '.gitignore' '.git_template' '.tmux.conf' '.i3/config' '.i3/pattern-1.png' '.i3/pattern-2.png' '.i3/pattern-3.png' '.i3status.conf' '.Xresources');
 folderLocal=${HOME}'/.local/bashAndTmux'
 
 echo "_| Start to install, make symbolic link config files |_"
@@ -26,7 +26,7 @@ do
     if [ ${platform} == 'Darwin' ]; then
         yes | ln -shi "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}" 2>/dev/null
     else
-        yes | ln -shi "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}" 2>/dev/null
+        yes | ln -si "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}"
     fi
 done
 
