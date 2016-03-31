@@ -45,6 +45,7 @@ do
     cd $folderLocal
 
     rm "${HOME}"/"${folder}""${file}"
+    #Todo: necessary ?
     if [ ${platform} == 'Darwin' ]; then
         yes | ln -shi "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}" 2>/dev/null
     else
