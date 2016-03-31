@@ -58,4 +58,4 @@ source $HOME/.bashrc
 git submodule init
 git submodule update
 
-cd -
+cd $OLDPWD
