@@ -8,6 +8,8 @@ export TA_SOURCE_BIN="${TA_SOURCE}/bin"
 export TA_SOURCE_BIN_LOG="${TA_SOURCE_BIN}/log"
 export TA_SOURCE_BIN_LIB="${TA_SOURCE_BIN}/lib"
 
+export HOMEBREW_GITHUB_API_TOKEN="6c863714016357371895e1816739c0c1fb878509"
+
 # export port tmux in file
 # so tmux can update this port if is changed
 display_for_tmux_path=~/.local/tmp/.display_for_tmux
