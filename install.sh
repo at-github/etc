@@ -47,9 +47,9 @@ do
     rm "${HOME}"/"${folder}""${file}"
     #Todo: necessary ?
     if [ ${platform} == 'Darwin' ]; then
-        yes | ln -shi "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}" 2>/dev/null
+        ln -shi "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}"
     else
-        yes | ln -si "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}"
+        ln -si "${PWD}"'/'"${folder}""${file}" "${HOME}"/"${folder}""${file}"
     fi
 done
 
