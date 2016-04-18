@@ -22,6 +22,7 @@ declare -a files=(\
     '.i3/pattern-3.png'\
     '.i3status.conf'\
     '.Xresources'\
+    '.psqlrc'\
 );
 folderLocal=${HOME}'/.local/bashAndTmux'
 

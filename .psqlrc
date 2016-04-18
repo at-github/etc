@@ -1,0 +1,13 @@
+--PROMPT1: is the normal prompt that is issued when psql requests a new command.
+--PROMPT2: is issued when more input is expected during command input because the command was not terminated with a semicolon or a quote was not closed.
+--PROMPT3: is issued when you run an SQL COPY command and you are expected to type in the row values on the terminal.
+
+-- n  = user
+-- M  = full host name
+-- m  = host name
+-- x  = ?
+-- #  = ?
+-- >  = ?
+-- %/ = db ?
+
+\set PROMPT1 ' %n\n %m\n %/\n%➜ '
