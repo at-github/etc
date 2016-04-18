@@ -11,3 +11,4 @@
 -- %/ = db ?
 
 \set PROMPT1 ' %n\n %m\n %/\n%➜ '
+\set PROMPT2 '➜ '
