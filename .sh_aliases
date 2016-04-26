@@ -36,7 +36,7 @@ alias rm='rm -i'
 alias r='rm'
 
 alias cat='cat -n'
-alias hi='highlight -O ansi'
+alias hi='highlight.sh'
 
 alias df='df -H'
 alias du='du -ch'
