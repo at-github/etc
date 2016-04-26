@@ -1,0 +1,17 @@
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+ShowMenuBarByDefault=false
+ShowWindowTitleOnTitleBar=true
+
+[MainWindow]
+Height 1920=1712
+State=AAAA/wAAAAD9AAAAAAAABKwAAAaZAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1200=1196
+
+[TabBar]
+NewTabBehavior=PutNewTabAfterCurrentTab
+TabBarVisibility=ShowTabBarWhenNeeded

@@ -2,7 +2,8 @@
 platform=$(uname);
 declare -a files=(\
     '.zsh_aliases'\
-    '.zsh_prompt'  '.shrc'\
+    '.zsh_prompt'\
+    '.shrc'\
     '.zshrc'\
     '.zsh'\
     '.sh_aliases'\
@@ -23,6 +24,7 @@ declare -a files=(\
     '.i3status.conf'\
     '.Xresources'\
     '.psqlrc'\
+    '.config/konsolerc'\
 );
 folderLocal=${HOME}'/.local/bashAndTmux'
 
