@@ -1,6 +1,9 @@
 [Desktop Entry]
 DefaultProfile=Shell.profile
 
+[Favorite Profiles]
+Favorites=Shell.profile
+
 [KonsoleWindow]
 AllowMenuAccelerators=true
 ShowMenuBarByDefault=false
@@ -9,6 +12,7 @@ ShowWindowTitleOnTitleBar=true
 [MainWindow]
 Height 1920=1712
 State=AAAA/wAAAAD9AAAAAAAABKwAAAaZAAAABAAAAAQAAAAIAAAACPwAAAAA
+MenuBar=Disabled
 ToolBarsMovable=Disabled
 Width 1200=1196
 
