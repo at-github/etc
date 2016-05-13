@@ -7,6 +7,7 @@ export TA_SOURCE_CONF="${TA_SOURCE}/bashAndTmux"
 export TA_SOURCE_BIN="${TA_SOURCE}/bin"
 export TA_SOURCE_BIN_LOG="${TA_SOURCE_BIN}/log"
 export TA_SOURCE_BIN_LIB="${TA_SOURCE_BIN}/lib"
+export SSH_ENV="/tmp/ssh-agent"
 
 export HOMEBREW_GITHUB_API_TOKEN="6c863714016357371895e1816739c0c1fb878509"
 
@@ -16,7 +17,8 @@ display_for_tmux_path=~/.local/tmp/.display_for_tmux
 
 #Start ssh agent
 if [[ -z "$SSH_AUTH_SOCK" ]]; then
-    eval `ssh-agent -s`
+    ssh-agent > ${SSH_ENV}
+    source ${SSH_ENV}
     ssh-add
 fi
 
