@@ -46,6 +46,7 @@
 [fetch]
     #Todo: to document
     recurseSubmodules = on-demand
+    prune = true
 
 [grep]
     #Todo: to document
