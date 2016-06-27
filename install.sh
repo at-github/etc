@@ -60,6 +60,6 @@ printf "\n_| Source .bashrc |_\n\n"
 source $HOME/.bashrc
 
 git submodule init
-git submodule update
+git submodule update --depth 1
 
 cd $OLDPWD
