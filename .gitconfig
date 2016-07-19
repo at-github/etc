@@ -6,6 +6,26 @@
     ui = true
     status = always
 
+[color "status"]
+    header    = normal
+    changed   = red bold
+    updated   = red
+    added     = green bold
+    untracked = magenta
+    nobranch  = bold
+
+[color "branch"]
+    current  = green reverse
+    local    = green
+    remote   = red #not working
+    upstream = red
+
+[color "diff"]
+    meta = normal
+    frag = yellow bold
+    old  = red
+    new  = green
+
 [alias]
     st   = status -sbuno
     br   = branch
