@@ -65,6 +65,17 @@ User root displayed on red background, maximum stress guaranty!
 
 ![Screenshot](zsh-prompt-jobs.png)
 ![Screenshot](zsh-prompt-error.png)
+####Status git:
+![Screenshot](zsh-prompt-git.png)
+* ⚡ for tracked modified files
+* ✓ for added to stage files
+* ✖ for untracked files
+* ✖ for conflict files
+* ⚑ for stash list
+* ↑ for local are ahead from remote
+* ↓ for local are behind from remote
+*  for clean working directory, you take a break
+
 ###Aliases
 * same as bash list above
 * `rz` reload zsh config file
