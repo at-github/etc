@@ -59,7 +59,9 @@ User root displayed on red background, maximum stress guaranty!
 
 ##Zsh
 
-Coming soon…
+###Aliases
+* same as bash list above
+* `rz` reload zsh config file
 
 ##Tmux
 ![Screenshot](screenshot-tmux.png)
