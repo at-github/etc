@@ -59,6 +59,12 @@ User root displayed on red background, maximum stress guaranty!
 
 ##Zsh
 
+###Prompt
+*  for jobs run in background
+*  with error code when happen
+
+![Screenshot](zsh-prompt-jobs.png)
+![Screenshot](zsh-prompt-error.png)
 ###Aliases
 * same as bash list above
 * `rz` reload zsh config file
