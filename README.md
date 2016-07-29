@@ -11,13 +11,13 @@ It create symlinks in your home.
 
 ###Some aliases
 * pretty log with lg
-* ci for commit
-* co for checkout
-* st for status without untracked files
-* dw & dws for diff --color-words unstaged files or not
-* rh & rhh for reset head and reset head --hard
-* gitdiff for git diff in a watch refreshing every 2 seconds
-* gitst same but for status
+* `ci` for `commit`
+* `co` for `checkout`
+* `st` for status without untracked files
+* `dw` & `dws` for `diff --color-words` unstaged files or not
+* `rh` & `rhh` for reset head and reset head --hard
+* `gitdiff` for git diff in a watch refreshing every 2 seconds
+* `gitst` same but for status
 
 ###Other
 Create a template commit message in your home.
@@ -46,11 +46,11 @@ List of some sourced ressources, mainly for completion on mac OS(need brew), deb
 
 ###Aliases
 I'm not listing all but see some significants i think
-* c for cd
-* l for ls -lFh --group-directories-first
-* g for grep -n --color=auto
-* cp, mv & rm need confirm on overwrite
-* vi for vim -u NONE, no plugins no vimrc
+* `c` for `cd`
+* `l` for `ls -lFh --group-directories-first`
+* `g` for `grep -n --color=auto`
+* `cp`, `mv` & `rm` need confirm on overwrite
+* `vi` for `vim -u NONE`, no plugins no vimrc
 
 ###Other
 ![Screenshot](screenshot-prompt3-root.png)
