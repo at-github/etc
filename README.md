@@ -2,14 +2,14 @@
 
 Configuration files for some things
 
-##Instal
+## Instal
 
 Launch install.sh script,
 It create symlinks in your home.
 
-##Git
+## Git
 
-###Some aliases
+### Some aliases
 * pretty log with lg
 * `ci` for `commit`
 * `co` for `checkout`
@@ -19,17 +19,17 @@ It create symlinks in your home.
 * `gitdiff` for git diff in a watch refreshing every 2 seconds
 * `gitst` same but for status
 
-###Other
+### Other
 Create a template commit message in your home.
 This configuration need it.
 
-##Bash
+## Bash
 
-###Prompt
-
+### Prompt
 ![Screenshot](screenshot-prompt1-git-status.png)
 ![Screenshot](screenshot-prompt2-git-remote.png)
-####Status git:
+
+#### Status git:
 * ⚡ for tracked modified files
 * ✓ for added to stage files
 * ✗ for untracked files
@@ -38,13 +38,13 @@ This configuration need it.
 * ↖ for local are behind from remote
 * ⤧ local and remote have diverged
 
-###Sourced
+### Sourced
 List of some sourced ressources, mainly for completion on mac OS(need brew), debian and centos.
 * bash_completion
 * git-prompt
 * bash_completion_tmux
 
-###Aliases
+### Aliases
 I'm not listing all but see some significants i think
 * `c` for `cd`
 * `l` for `ls -lFh --group-directories-first`
@@ -52,21 +52,21 @@ I'm not listing all but see some significants i think
 * `cp`, `mv` & `rm` need confirm on overwrite
 * `vi` for `vim -u NONE`, no plugins no vimrc
 
-###Other
-
+### Other
 ![Screenshot](screenshot-prompt3-root.png)
 
 User root displayed on red background, maximum stress guaranty!
 
-##Zsh
+## Zsh
 
-###Prompt
+### Prompt
 *  for jobs run in background
 *  with error code when happen
 
 ![Screenshot](zsh-prompt-jobs.png)
 ![Screenshot](zsh-prompt-error.png)
-####Status git:
+
+#### Status git:
 ![Screenshot](zsh-prompt-git.png)
 * ⚡ for tracked modified files
 * ✓ for added to stage files
@@ -77,12 +77,11 @@ User root displayed on red background, maximum stress guaranty!
 * ↓ for local are behind from remote
 *  for clean working directory, you take a break
 
-###Aliases
+### Aliases
 * same as bash list above
 * `rz` reload zsh config file
 
-##Tmux
-
+## Tmux
 ![Screenshot](screenshot-tmux.png)
 
 * Prefix 'a'
@@ -97,7 +96,7 @@ User root displayed on red background, maximum stress guaranty!
         * session tmux name
         * and time
 
-###Aliases
+### Aliases
 * `<c-a>r` to refresh tmux conf
 * `<c-a>m` to enable mouse mode
 * `<c-a>M` to disable mouse mode (paste with middle mouse click will work)
@@ -105,14 +104,13 @@ User root displayed on red background, maximum stress guaranty!
 * `t` eq `tmux -u -2`
 * `tt` eq `tmux -u -2 attach -d`
 
-##I3
-
+## I3
 ![Screenshot](screenshot-i3.png)
 
 * Use 'super key' as prefix
 * Status bar is on the top
 
-###Aliases
+### Aliases
 * Launching konsole with `mod+return`
 * Kill focused window `mod+Shift+q`
 * You can change focus with same vim arrows (jkl)
