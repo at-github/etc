@@ -53,6 +53,7 @@ I'm not listing all but see some significants i think
 * `vi` for `vim -u NONE`, no plugins no vimrc
 
 ###Other
+
 ![Screenshot](screenshot-prompt3-root.png)
 
 User root displayed on red background, maximum stress guaranty!
@@ -81,6 +82,7 @@ User root displayed on red background, maximum stress guaranty!
 * `rz` reload zsh config file
 
 ##Tmux
+
 ![Screenshot](screenshot-tmux.png)
 
 * Prefix 'a'
@@ -104,6 +106,7 @@ User root displayed on red background, maximum stress guaranty!
 * `tt` eq `tmux -u -2 attach -d`
 
 ##I3
+
 ![Screenshot](screenshot-i3.png)
 
 * Use 'super key' as prefix
