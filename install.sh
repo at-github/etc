@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+if [ -f ~/.shrc ]; then
+    . ~/.shrc
+else
+    echo "~/.shrc file is missing!"
+    exit 1
+fi
+
 platform=$(uname);
 declare -a files=(\
     '.zsh_aliases'\
@@ -26,7 +33,8 @@ declare -a files=(\
     '.psqlrc'\
     '.config/konsolerc'\
 );
-folderLocal=${HOME}'/.local/bashAndTmux'
+
+folderLocal=${TA_SOURCE_CONF}
 
 echo "_| Start to install, make symbolic link config files |_"
 
@@ -56,8 +64,7 @@ do
     fi
 done
 
-printf "\n_| Source .bashrc |_\n\n"
-source $HOME/.bashrc
+printf "\n_| Please, source config for ${SHELL} |_\n\n"
 
 git submodule init
 git submodule update --depth 1

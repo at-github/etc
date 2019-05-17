@@ -1,7 +1,7 @@
 if [ -f ~/.shrc ]; then
     . ~/.shrc
 else
-    exit 0
+    exit 1
 fi
 
 # Enabled default prompt
@@ -49,10 +49,6 @@ fi
 
 if [ -f ~/.zsh_prompt ]; then
     $(. ~/.zsh_prompt) || echo 'Error loading "~/.zsh_prompt"'
-fi
-
-if [ ! -d ~/.local/tmp ]; then
-    mkdir ~/.local/tmp
 fi
 
 # Arrow search with pattern already typed

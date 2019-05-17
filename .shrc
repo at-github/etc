@@ -3,7 +3,7 @@ export TERM="screen-256color"
 
 # Define global, easy to find source not linking on home root
 export TA_SOURCE="${HOME}/.local"
-export TA_SOURCE_CONF="${TA_SOURCE}/bashAndTmux"
+export TA_SOURCE_CONF="${TA_SOURCE}/etc"
 export TA_SOURCE_BIN="${TA_SOURCE}/bin"
 export TA_SOURCE_BIN_LOG="${TA_SOURCE_BIN}/log"
 export TA_SOURCE_BIN_LIB="${TA_SOURCE_BIN}/lib"
@@ -28,25 +28,25 @@ elif [[ -f ${display_for_tmux_path} ]]; then
     export DISPLAY=$(\cat ${display_for_tmux_path})
 fi
 
-display_for_tmux_path=~/.local/tmp/.display_for_tmux
+display_for_tmux_path=${TA_SOURCE}/tmp/.display_for_tmux
 
-if [[ ! -d ~/.local/tmp ]]; then
-    mkdir ~/.local/tmp
+if [[ ! -d ${TA_SOURCE}/tmp ]]; then
+    mkdir ${TA_SOURCE}/tmp
 fi
 
 # Locally binaries
-if [ -d ~/.local/bin ]; then
-    PATH=$PATH:~/.local/bin
+if [ -d ${TA_SOURCE_BIN} ]; then
+    PATH=$PATH:${TA_SOURCE_BIN}
 fi
 
-if [ -d ~/.local/bin/vim ]; then
-    PATH=~/.local/bin/vim/bin:$PATH
+if [ -d ${TA_SOURCE_BIN}/vim ]; then
+    PATH=${TA_SOURCE_BIN}/vim/bin:$PATH
 fi
 
-if [ -d ~/.local/git ]; then
-    PATH=~/.local/git/bin:$PATH
+if [ -d ${TA_SOURCE}/git ]; then
+    PATH=${TA_SOURCE}/git/bin:$PATH
 fi
 
-if [ -f ~/.local/bin/lib/completion_go.sh ]; then
-    PATH=~/.local/bin/lib/completion_go.sh:$PATH
+if [ -f ${TA_SOURCE_BIN}/lib/completion_go.sh ]; then
+    PATH=${TA_SOURCE_BIN}/lib/completion_go.sh:$PATH
 fi
