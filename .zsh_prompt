@@ -2,8 +2,8 @@ if [ -f ${TA_SOURCE_BIN}/lib/colors.sh ]; then
     source ${TA_SOURCE_BIN}/lib/colors.sh
 fi
 
-if [ -f $TA_SOURCE_CONF/zshrc.sh ]; then
-    source $TA_SOURCE_CONF/zshrc.sh
+if [ -f ${TA_SOURCE_CONF}/zshrc.sh ]; then
+    source ${TA_SOURCE_CONF}/zshrc.sh
 else
     exit 1
 fi

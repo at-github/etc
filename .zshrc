@@ -49,6 +49,7 @@ fi
 
 if [ -f ~/.zsh_prompt ]; then
     $(. ~/.zsh_prompt) || echo 'Error loading "~/.zsh_prompt"'
+    . ~/.zsh_prompt
 fi
 
 # Arrow search with pattern already typed
