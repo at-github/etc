@@ -8,7 +8,7 @@ alias tls='t ls'
 alias c='cd'
 #Move to the near root git folder
 alias cdg='cd $(findRepo.sh)'
-alias cbash='c ~/.local/bashAndTmux'
+alias cetc='c ~/.local/etc'
 alias cbin='c ~/.local/bin'
 
 alias ls='ls --color=auto'
