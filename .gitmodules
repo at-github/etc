@@ -1,9 +1,6 @@
 [submodule ".fonts"]
 	path = .fonts
 	url = https://github.com/powerline/fonts
-[submodule "i3-gaps"]
-	path = i3-gaps
-	url = https://www.github.com/Airblader/i3
 [submodule ".nerd-fonts"]
 	path = .nerd-fonts
 	url = https://github.com/ryanoasis/nerd-fonts
