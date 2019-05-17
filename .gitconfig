@@ -114,5 +114,3 @@
 [gitreview]
     remote = origin
     review = '!git-review'
-[init]
-	templatedir = ~/.git_template/template
