@@ -48,7 +48,7 @@ if [[ `uname` == 'Darwin' ]]; then
 fi
 
 if [ -f ~/.zsh_prompt ]; then
-    . ~/.zsh_prompt
+    $(. ~/.zsh_prompt) || echo 'Error loading "~/.zsh_prompt"'
 fi
 
 if [ ! -d ~/.local/tmp ]; then
