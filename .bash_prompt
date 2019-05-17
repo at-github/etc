@@ -15,7 +15,7 @@ SOLAR_WHITE=$(tput setaf 254)
 
 style_user="\[${RESET}$(tput setaf 1)\]"
 style_host="\[${RESET}${SOLAR_YELLOW}\]"
-style_path="\[${RESET}$(tput setab 237)$(tput setaf 1)\]"
+style_path="\[${RESET}$(tput setaf 1)\]"
 style_chars="\[${RESET}${SOLAR_WHITE}\]"
 style_branch="${SOLAR_CYAN}"
 
