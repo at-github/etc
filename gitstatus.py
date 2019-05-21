@@ -14,7 +14,7 @@ error_string = error.decode('utf-8')
 
 #Not a git repo
 if 'fatal: Not a git repository' in error_string:
-	sys.exit(0)
+    sys.exit(0)
 
 branch = branch.decode("utf-8").strip()[11:]
 
@@ -23,7 +23,7 @@ err_string = err.decode('utf-8')
 
 #?error
 if 'fatal' in err_string:
-	sys.exit(0)
+    sys.exit(0)
 
 #Via diff
 changed_files = [namestat[0] for namestat in res.decode("utf-8").splitlines()]
@@ -43,32 +43,31 @@ untracked = str(nb_untracked)
 ahead, behind = 0,0
 
 if not branch: # not on any branch
-	branch = prehash + Popen(['git','rev-parse','--short','HEAD'], stdout=PIPE).communicate()[0].decode("utf-8")[:-1]
+    branch = prehash + Popen(['git','rev-parse','--short','HEAD'], stdout=PIPE).communicate()[0].decode("utf-8")[:-1]
 else:
-	remote_name = Popen(['git','config','branch.%s.remote' % branch], stdout=PIPE).communicate()[0].decode("utf-8").strip()
-	if remote_name:
-		merge_name = Popen(['git','config','branch.%s.merge' % branch], stdout=PIPE).communicate()[0].decode("utf-8").strip()
-		if remote_name == '.': # local
-			remote_ref = merge_name
-		else:
-			remote_ref = 'refs/remotes/%s/%s' % (remote_name, merge_name[11:])
-		revgit = Popen(['git', 'rev-list', '--left-right', '%s...HEAD' % remote_ref],stdout=PIPE, stderr=PIPE)
-		revlist = revgit.communicate()[0]
-		if revgit.poll(): # fallback to local
-			revlist = Popen(['git', 'rev-list', '--left-right', '%s...HEAD' % merge_name],stdout=PIPE, stderr=PIPE).communicate()[0]
-		behead = revlist.decode("utf-8").splitlines()
-		ahead = len([x for x in behead if x[0]=='>'])
-		behind = len(behead) - ahead
+    remote_name = Popen(['git','config','branch.%s.remote' % branch], stdout=PIPE).communicate()[0].decode("utf-8").strip()
+    if remote_name:
+        merge_name = Popen(['git','config','branch.%s.merge' % branch], stdout=PIPE).communicate()[0].decode("utf-8").strip()
+        if remote_name == '.': # local
+            remote_ref = merge_name
+        else:
+            remote_ref = 'refs/remotes/%s/%s' % (remote_name, merge_name[11:])
+        revgit = Popen(['git', 'rev-list', '--left-right', '%s...HEAD' % remote_ref],stdout=PIPE, stderr=PIPE)
+        revlist = revgit.communicate()[0]
+        if revgit.poll(): # fallback to local
+            revlist = Popen(['git', 'rev-list', '--left-right', '%s...HEAD' % merge_name],stdout=PIPE, stderr=PIPE).communicate()[0]
+        behead = revlist.decode("utf-8").splitlines()
+        ahead = len([x for x in behead if x[0]=='>'])
+        behind = len(behead) - ahead
 
 out = ' '.join([
-	branch,
-	str(ahead),
-	str(behind),
-	staged,
-	conflicts,
-	changed,
-	untracked,
-	stashed,
-	])
+    branch,
+    str(ahead),
+    str(behind),
+    staged,
+    conflicts,
+    changed,
+    untracked,
+    stashed,
+    ])
 print(out, end='')
-
