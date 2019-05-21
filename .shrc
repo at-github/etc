@@ -34,6 +34,16 @@ if [[ ! -d ${TA_SOURCE}/tmp ]]; then
     mkdir ${TA_SOURCE}/tmp
 fi
 
+#Source this path so some program like ifconfig is autocompleted
+if [ -d /sbin ]; then
+    PATH=/sbin:$PATH
+fi
+
+#Source this path so some program like nginx is autocompleted
+if [ -d /usr/sbin ]; then
+    PATH=/usr/sbin:$PATH
+fi
+
 # Locally binaries
 if [ -d ${TA_SOURCE_BIN} ]; then
     PATH=$PATH:${TA_SOURCE_BIN}
