@@ -13,7 +13,7 @@ branch, error = gitsym.communicate()
 error_string = error.decode('utf-8')
 
 #Not a git repo
-if 'fatal: Not a git repository' in error_string:
+if 'fatal' in error_string:
     sys.exit(0)
 
 branch = branch.decode("utf-8").strip()[11:]

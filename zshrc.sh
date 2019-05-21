@@ -47,14 +47,12 @@ function update_current_git_vars() {
     unset __CURRENT_GIT_STATUS
 
     if [[ "$GIT_PROMPT_EXECUTABLE" == "python" ]]; then
+        # TODO Move it in .local/bin
         local gitstatus="$__GIT_PROMPT_DIR/gitstatus.py"
         _GIT_STATUS=`python ${gitstatus} 2>/dev/null`
     fi
-    if [[ "$GIT_PROMPT_EXECUTABLE" == "haskell" ]]; then
-        local gitstatus="$__GIT_PROMPT_DIR/dist/build/gitstatus/gitstatus"
-        _GIT_STATUS=`${gitstatus}`
-    fi
-     __CURRENT_GIT_STATUS=("${(@s: :)_GIT_STATUS}")
+
+    __CURRENT_GIT_STATUS=("${(@s: :)_GIT_STATUS}")
     GIT_BRANCH=$__CURRENT_GIT_STATUS[1]
     GIT_AHEAD=$__CURRENT_GIT_STATUS[2]
     GIT_BEHIND=$__CURRENT_GIT_STATUS[3]
