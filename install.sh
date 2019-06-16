@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 if [ -f ~/.shrc ]; then
     . ~/.shrc
+elif [ -f ~/.local/etc/.shrc ]; then
+    . ~/.shrc
 else
     echo "~/.shrc file is missing!"
     exit 1
