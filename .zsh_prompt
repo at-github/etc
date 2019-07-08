@@ -109,6 +109,10 @@ setprompt () {
     else
         PROMPT=%{$FPURPLE%}
     fi
+    if [[ $DOCKER_MODE == true ]]; then
+        PROMPT+=%{$FCYAN%}' '%{$FPURPLE%}
+        PROMPT+=' '
+    fi
     PROMPT+=%n%{$RESET%}
     PROMPT+=%{$RESET%}' on '%{$FBLUE%}%M$'%{$RESET%}\n'
     PROMPT+=%{$FBASE0%}'%$PR_PWDLEN<...<%~%<< '%{$RESET%}$'\n'
