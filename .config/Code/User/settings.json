@@ -1,0 +1,18 @@
+{
+    "editor.renderWhitespace": "boundary",
+    "editor.cursorStyle": "block-outline",
+    "files.exclude": {
+        "**/.sw*": true
+    },
+    "terminal.external.linuxExec": "tilix",
+    "workbench.colorTheme": "Material Theme High Contrast",
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.fontFamily": "monospace, 'FantasqueSansMono Nerd Font Regular'",
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'FantasqueSansMono Nerd Font Regular'",
+    "workbench.editor.highlightModifiedTabs": true,
+    "vim.enableNeovim": true,
+    "workbench.editor.showTabs": true,
+    "git.allowForcePush": true,
+    "git.autofetch": true
+}
