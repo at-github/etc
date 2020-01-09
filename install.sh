@@ -2,7 +2,7 @@
 if [ -f ~/.shrc ]; then
     . ~/.shrc
 elif [ -f ~/.local/etc/.shrc ]; then
-    . ~/.shrc
+    . ~/.local/etc/.shrc
 else
     echo "~/.shrc file is missing!"
     exit 1
