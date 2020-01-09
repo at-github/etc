@@ -12,7 +12,6 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
 	"Print to console": {
 		"prefix": "c",
 		"body": [
@@ -76,6 +75,15 @@
 		"prefix": "it",
 		"body": [
 			"it('$1', () => {",
+			"    $2",
+			"});",
+			"$3"
+		]
+	},
+	"beforeEach": {
+		"prefix": "bE",
+		"body": [
+			"beforeEach('$1', () => {",
 			"    $2",
 			"});",
 			"$3"

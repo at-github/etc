@@ -14,5 +14,9 @@
     "vim.enableNeovim": true,
     "workbench.editor.showTabs": true,
     "git.allowForcePush": true,
-    "git.autofetch": true
+	"git.autofetch": true,
+	"window.menuBarVisibility": "toggle",
+	"workbench.list.openMode": "doubleClick",
+	"workbench.quickOpen.preserveInput": true,
+	"workbench.editor.enablePreview": false,
 }
