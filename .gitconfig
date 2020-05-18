@@ -45,7 +45,7 @@
     lg   = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %ar)%Creset'
     last = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %ar)%Creset' -n 1
     g    = grep -n
-    pfp  = push --force-with-lease
+    pfl  = push --force-with-lease
 
 [core]
     pager = less
