@@ -149,7 +149,8 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10: $workspaceMusic
 
-assign [class="Lollypop"] 10: $workspaceMusic
+# How to know the class
+for_window [class="Spotify"] move to workspace 10: $workspaceMusic
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -241,4 +242,4 @@ exec --no-startup-id i3-msg 'exec xscreensaver -no-splash'
 #Transparency and transition
 exec --no-startup-id compton -f
 
-exec lollypop
+exec spotify
