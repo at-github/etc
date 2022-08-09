@@ -57,7 +57,7 @@ alias cv='c ~/.vim/'
 alias cnv='c ~/.nvim/'
 alias cg='editGitModify.sh'
 
-alias ei3='v -p ${TA_SOURCE_CONF}/.i3/config ${TA_SOURCE_CONF}/.i3status.conf'
+alias ei3='nv -p ${TA_SOURCE_CONF}/.i3/config ${TA_SOURCE_CONF}/.i3status.conf'
 
 alias gitdiff="watch --color -n 2 git diff --color=always"
 alias gd="gitdiff"
@@ -66,5 +66,3 @@ alias tgd="tmux split-window -h; tmux send-keys gd ENTER"
 alias gitst="watch --color -n 2 git st"
 alias gt="gitst"
 alias tgitst="tmux split-window -h; tmux send-keys gitst ENTER"
-
-alias ei3='v -p ~/.i3status.conf ~/.i3/config'
