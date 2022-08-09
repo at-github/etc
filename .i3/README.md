@@ -2,8 +2,7 @@
 
 ## Tasks
 - [ ] Do not display, wifi, ethernet or vpn as fallback
-- [ ] List gui program i can launch to set some stuf
-- [ ] How to launch pamac on i3?
+- [/] List gui program i can launch to set some stuf
 - [ ] Move i3 config in ~/.config? And create a dedicated script to deploy it
 
 ## How to launch
