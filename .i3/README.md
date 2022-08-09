@@ -6,6 +6,9 @@
 - [ ] How to launch pamac on i3?
 - [ ] Move i3 config in ~/.config? And create a dedicated script to deploy it
 
+## How to launch
+- pamac `pamac-manager` but need `sudo` so…
+
 ## How to manage
 
 ### Network
