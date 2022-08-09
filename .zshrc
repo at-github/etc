@@ -56,6 +56,10 @@ if [ -f ~/.zsh_prompt ]; then
     . ~/.zsh_prompt
 fi
 
+if [ ! -d "${TA_SOURCE_BIN}" ]; then
+    echo "\e[01;31m The bin folder doesn't exist yet\e[0m";
+fi
+
 # Arrow search with pattern already typed
 if [ -f "${TA_SOURCE_BIN_LIB}/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh" ]; then
     . "${TA_SOURCE_BIN_LIB}/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh"
