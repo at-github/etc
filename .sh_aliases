@@ -11,6 +11,8 @@ alias cdg='cd $(findRepo.sh)'
 alias cetc='c ~/.local/etc'
 alias cbin='c ~/.local/bin'
 alias cdocs='c ~/.local/docs'
+alias cj='c ~/.local/journal'
+alias upjournal='cj && git pull && c -'
 
 alias ls='ls --color=auto'
 alias ll='ls -lFh --group-directories-first'
