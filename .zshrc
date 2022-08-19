@@ -65,6 +65,11 @@ if [ -f "${TA_SOURCE_BIN_LIB}/zsh-history-substring-search/zsh-history-substring
     . "${TA_SOURCE_BIN_LIB}/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh"
 fi
 
+autoload -U +X bashcompinit && bashcompinit
+if [ -f ~/.local/bin/wp-completion.bash ]; then
+    . ~/.local/bin/wp-completion.bash
+fi
+
 # bind UP and DOWN arrow keys
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
