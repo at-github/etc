@@ -4,6 +4,7 @@
 - [ ] Do not display, wifi, ethernet or vpn as fallback
 - [/] List gui program i can launch to set some stuf
 - [ ] Move i3 config in ~/.config? And create a dedicated script to deploy it
+- [ ] Wifi, icon for low, normal and high perf
 
 ## How to launch
 - pamac `pamac-manager` but need `sudo` so…

@@ -55,7 +55,7 @@ alias cv='c ~/.vim/'
 alias cnv='c ~/.nvim/'
 alias cg='editGitModify.sh'
 
-alias ei3='nv -p ${TA_SOURCE_CONF}/.i3/config ${TA_SOURCE_CONF}/.i3status.conf'
+alias ei3='nv -p ${TA_SOURCE_CONF}/.i3/README.md ${TA_SOURCE_CONF}/.i3/config ${TA_SOURCE_CONF}/.i3status.conf'
 
 alias gitdiff="watch --color -n 2 git diff --color=always"
 alias gd="gitdiff"

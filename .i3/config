@@ -55,12 +55,7 @@ bindsym $mod+Shift+q kill
 # make
 # sudo make install
 #
-# bindsym $mod+d exec dmenu_run -i -b -l 20 -p '➜' -nb '$grey4' -nf '$grey5' -sb '$red1' -sf '$grey6' -fn 'Powerline DejaVu Sans Mono-10'
-
-## Rofi
-bindsym $mod+d       exec rofi -show run
-bindsym $mod+Shift+w exec rofi -show window
-bindsym $mod+Shift+s exec rofi -show ssh
+bindsym $mod+d exec dmenu_run -i -b -l 20 -p '➜' -nb '$grey4' -nf '$grey5' -sb '$red1' -sf '$grey6' -fn 'Powerline DejaVu Sans Mono-10'
 
 # change focus
 bindsym $mod+j focus left
