@@ -52,7 +52,7 @@ alias vi="v -u NONE"
 alias ev='e ~/.vim/.vimrc ~/.vim/.vimrc.bepo'
 alias evn='e ~/.nvim/.nvimrc ~/.nvim/.vimrc.bepo'
 alias cv='c ~/.vim/'
-alias cnv='c ~/.nvim/'
+alias cnv='c ~/.config/nvim'
 alias cg='editGitModify.sh'
 
 alias ei3='nv -p ${TA_SOURCE_CONF}/.i3/README.md ${TA_SOURCE_CONF}/.i3/config ${TA_SOURCE_CONF}/.i3status.conf'
