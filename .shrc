@@ -60,3 +60,7 @@ fi
 if [ -f ${TA_SOURCE_BIN}/lib/completion_go.sh ]; then
     PATH=${TA_SOURCE_BIN}/lib/completion_go.sh:$PATH
 fi
+
+if [ -d ${HOME}/.config/composer/vendor/bin ]; then
+    PATH=${HOME}/.config/composer/vendor/bin:$PATH
+fi
