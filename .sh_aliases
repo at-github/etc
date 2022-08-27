@@ -46,8 +46,8 @@ alias du='du -ch'
 
 alias todo='g -is todo *'
 
-alias v='vim -p'
-alias e='nvim -p'
+alias v='vim'
+alias e='nvim'
 alias vi="v -u NONE"
 alias ev='e ~/.vim/.vimrc ~/.vim/.vimrc.bepo'
 alias evn='e ~/.nvim/.nvimrc ~/.nvim/.vimrc.bepo'
@@ -55,7 +55,7 @@ alias cv='c ~/.vim/'
 alias cnv='c ~/.config/nvim'
 alias cg='editGitModify.sh'
 
-alias ei3='nv -p ${TA_SOURCE_CONF}/.i3/README.md ${TA_SOURCE_CONF}/.i3/config ${TA_SOURCE_CONF}/.i3status.conf'
+alias ei3='e ${TA_SOURCE_CONF}/.i3/README.md ${TA_SOURCE_CONF}/.i3/config ${TA_SOURCE_CONF}/.i3status.conf'
 
 alias gitdiff="watch --color -n 2 git diff --color=always"
 alias gd="gitdiff"
