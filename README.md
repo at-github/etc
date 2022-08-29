@@ -2,7 +2,7 @@
 
 Configuration files for some things
 
-## Instal
+## Install
 
 Launch install.sh script,
 It create symlinks in your home.
