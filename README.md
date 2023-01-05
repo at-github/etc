@@ -1,3 +1,4 @@
+**[Deprecated] see [.config](https://github.com/at-github/.config) repo**
 # Conf
 
 Configuration files for some things
